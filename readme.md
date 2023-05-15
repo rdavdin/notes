@@ -7,4 +7,5 @@
 #### [Eloquent Javascript (3rd Edition)](https://docs.google.com/document/d/1ZU5A8xfihScfoau0FNzTwyubJY_BC38fkhAYDrjrf8o/edit?usp=sharing)
 
 ### Web
+#### [Basic Web Knowledge](/basic-web-knowlege.md)
 #### [Cors in Nodejs/Express](/Cors-in-Express.md)
