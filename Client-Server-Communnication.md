@@ -5,7 +5,7 @@
 - **_Netcat_** is a simple Unix utility which reads and writes data across network connections, using TCP or UDP protocol.
 - It is known as the Swiss Army knife of networking tools
 ```
-nc host port
+nc host port : to connect your terminal to the server
 
 nc google.com 80
 HEAD / HTTP/1.1 (press Enter twice)
@@ -91,6 +91,18 @@ So, while developing for HTTP/2:
 - TLS (Transport Layer Security) can be used by any protocol, not just HTTP. 
 - For example, FTPS = FTP (File Transfer Protocol) + TLS.
 - TLS encrypts communication in a way that can't be read by anyone else other than the intended recipients.
+###### TLS provides some important **guarantees** for web security:
+- It keeps the connection **private** by encrypting everything sent over it. Only the server and the browser should be able to read what's being sent.
+- It lets the browser **authenticate** the server. For instance, when a user accesses https://www.udacity.com/, they can be sure that the response they're seeing is really from Udacity's servers adn not from an impostor.
+- It helps protect the **integrity** of the data sent over that connection - checking that it has not been (accidentally or deliberately) modified or replaced.
+###### How does TLS assure **privacy**?
+- The data in the TLS certificate like public key and the server's private key are mathematically related to each other through a system called **public-key cryptography**. [Read more here](https://en.wikipedia.org/wiki/Public-key_cryptography). 
+- The important part is that the two endpoints (the browser and server) can securely agree on a **shared secret** which allows them to scramble the data sent between them so that only the other endpoint - and not any eavesdropper - can unscramble it.
+###### How does TLS assure **authentication**?
+- Thanks to the server certificate, the browser can verify that it is 'speaking' to the correct server. 
+- Refer to the **step 3** and **step 4** of the progress of the TLS handshake below.
+###### How does TLS assure integrity?
+- Every request and response sent over a TLS connection is sent with a [message authentication code (MAC)](https://en.wikipedia.org/wiki/Message_authentication_code) that the other end of the connection can verify to make sure that the message hasn't been altered or damaged in transit.
 ##### Encryption and Hashing
 - **Encryption:** 
   - **Asymmetric encryption:** with 2 keys, one key as public key is used for encryption by anyone who wants to send a message with you, the other key as private key is used to decrypt the message. **_Note_:** both 2 keys can encrypt a data and the other will decrypt the encrypted data.
