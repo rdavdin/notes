@@ -10,4 +10,8 @@
 #### [Basic Web Knowledge](/basic-web-knowlege.md)
 #### [Client Server Communication](/Client-Server-Communnication.md)
 #### [HTTP and Web Servers](/HTTP-and-Web-Servers.md)
+#### Networking for Web Developers [Part 1](/Networking-for-Web-Developer-Part1.md) [Part 2](/Networking-for-Web-Developer-Part2.md) [Part 3](/Networking-for-Web-Developer-Part3.md)
 #### [Cors in Nodejs/Express](/Cors-in-Express.md)
+
+### Helpful sites
+[explainshell.com](https://explainshell.com/)

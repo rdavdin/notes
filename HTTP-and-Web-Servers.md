@@ -34,6 +34,7 @@
 - **_Note_**: For historical reasons, operating systems only allow the administrator (or root) account to **listen** on ports **below 1024**. This is fine for production web servers, but it's not convenient for learning. 
 - port 80 is default for HTTP URIs
 - port 443 is default for HTTPS URIs
+- port 22 is default for SSH
 
 #### Send a request manually with _ncat_
 ```ncat 127.0.0.1 8000```: to connect the terminal to the server
