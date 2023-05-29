@@ -129,6 +129,7 @@ xterm
   - the shell will create a process from the binary file _ls_ under /bin directory, the process that has just created is a child process of the shell.
 - **Remember** a child process inherits certain properties from the parent process.
 - So, a child process created by the shell uses the environment variable _RDAV_, it will get the new value of the _RDAV_ if we set the _RDAV_ with _export_ keyword.
+
 ```
 rdav@serverrdav:~$ echoenv
 echopath: command not found
