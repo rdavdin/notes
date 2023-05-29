@@ -38,6 +38,7 @@
 - _usr_ is fro user programs 
 - it's something similar to _bin_, but the only difference is that the binaries within _bin_ are required for a boot-up and system maintenance processes. For example, _ls_ is an essential function of the operating system, so it's loaded in memory while starting up. That is the reason why it's located in the _bin_ directory. 
 - the binaries in _usr_ aren't required for that.
+
 #### Environment variables 
 [Refer to EnvironmentVariables](https://help.ubuntu.com/community/EnvironmentVariables)
 ###### A shell variable
@@ -141,7 +142,7 @@ rdav@serverrdav:~$ echoenvcp
 
 RDAV set with export
 rdav@serverrdav:~$
-```
+ ```
 
 #### Bash files
 - A Bash file, aka a Bash script, is a text file that contains a series of commands that can be executed by the Bash shell.
