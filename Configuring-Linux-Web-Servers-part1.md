@@ -46,6 +46,9 @@
 - it's something similar to _bin_, but the only difference is that the binaries within _bin_ are required for a boot-up and system maintenance processes. For example, _ls_ is an essential function of the operating system, so it's loaded in memory while starting up. That is the reason why it's located in the _bin_ directory. 
 - the binaries in _usr_ aren't required for that.
 
+#### Understanding bash Command Syntax and Structure
+
+
 #### Environment variables 
 [Refer to EnvironmentVariables](https://help.ubuntu.com/community/EnvironmentVariables)
 ###### A shell variable
@@ -101,7 +104,7 @@ rdav@serverrdav:~$ echo $PATH
 /home/rdav/.nvm/versions/node/v18.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
-#### HOME
+#### _HOME_
 - This variable contains the path to the current user's home directory.
 ```
 rdav@serverrdav:~$ echo $HOME
@@ -111,7 +114,7 @@ root@serverrdav:/home/rdav# echo $HOME
 /root           <-- the home dir of root 
 ```
 
-#### USER
+#### _USER_
 - contains the username of the current user
 ```
 rdav@serverrdav:~$ echo $USER
@@ -121,20 +124,20 @@ root@serverrdav:/home/rdav# echo $USER
 root
 ```
 
-#### SHELL
+#### _SHELL_
 - contains the path to the user's default shell
   
-#### PS1
+#### _PS1_
 - defines the prompt string that is displayed in the shell
   
-#### LANG
+#### _LANG_
 - defines the default languages and character set used by the system
 ```
 rdav@serverrdav:~$ echo $LANG
 en_US.UTF-8
 ```
 
-#### TERM
+#### _TERM_
 - defines the type of terminal being used
 ```
 rdav@serverrdav:~$ echo $TERM
