@@ -177,7 +177,7 @@ ssh-keygen
 - ```mkdir .ssh```
 - ```touch .ssh/authorized_keys``` This is a special file that will store all of **the public keys** that this account (```student```) is allowed to use for authentication, with one key per line in that file.
 - edit the ```authorized_keys``` file by adding the public key to a new line
-- set permissions on ```.ssh`` directory with 700 and ```authorized_keys``` file with 644:
+- set permissions on ```.ssh``` directory with 700 and ```authorized_keys``` file with 644:
 ```
 chmod 700 .ssh
 chmod 644 .ssh/authorized_keys
