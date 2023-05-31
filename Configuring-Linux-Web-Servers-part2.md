@@ -224,3 +224,87 @@ sudo chgrp student .bash_history
 sudo chown student .bash_history
 ```
 
+### Intro to Ports
+
+- Each application is configured to respond to requests destined for a specific port, such as a web server would respond on port 80, which is the default port for _HTTP_.
+- We can control which ports our server is allowed to accept requests for using an application called **the firewall**.
+
+Common Networking Ports:
+  
+| Port No | Port    | Protocol |
+|:----:|:----:|:----:|
+|21|FTP|TCP|
+|22|SSH|TCP|
+|23|TELNET|TCP|
+|25|SMTP|TCP|
+|53|DNS|TCP, UDP|
+|67, 68|DHCP|UDP|
+|80|HTTP|TCP|
+|110|POP3|TCP|
+|143|IMAP|TCP, UDP|
+|443|HTTPS|TCP|
+
+### Intro to Firewalls
+- We should let our server listen on the ports required for our application to function correctly.
+- We can configure which ports we want our server to listen to by using an application called **firewall**.
+![Firewalls Illustration](/imgs/linux/firewall-illustration.png)
+![Firewalls Illustration](/imgs/linux/HardwareFirewall.gif)
+
+#### Intro to ```ufw```
+- Ubuntu comes with a firewall **pre-installed** called ```ufw``, but it's not active.
+```
+rdav@serverrdav:~$ sudo ufw status
+Status: inactive
+```
+
+Good practices for adding rules to our firewall:
+1. Blocking all incoming requests
+```
+ sudo ufw default deny incoming
+```
+2. Any request to our server is trying out to send out to the Internet
+```
+sudo ufw default allow outgoing
+```
+**Remember:** The firewall now is also inactive. We actually have to **turn it on** ourselves **once we have everything how we want**.
+
+**Configuring Ports in ```ufw```**
+
+3. Allow the ports we know we'll need for the applications our server will be supporting. Surely, _ssh_
+
+```
+sudo ufw allow ssh
+```
+
+4. In case, the web application that we plan to support is a basic _HTTP_ server
+
+```
+sudo ufw allow www
+```
+
+**Remember:** ```www`` only allows _HTTP_ traffic. If you want to allow _HTTPS_ traffic, you need to allow port 443.
+
+```
+sudo ufw allow 443/tcp
+```
+
+5. That's it! It's time to enable our firewall
+
+```
+sudo ufw enable
+```
+
+6. Check the status ```sudo ufw status```
+
+```
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+80/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+80/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+```
