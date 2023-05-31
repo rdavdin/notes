@@ -276,7 +276,7 @@ sudo ufw allow ssh
 ```
 sudo ufw allow www
 ```
-**Remember:** ```www`` only allows _HTTP_ traffic. If you want to allow _HTTPS_ traffic, you need to allow port 443.
+**Remember:** ```www``` only allows _HTTP_ traffic. If you want to allow _HTTPS_ traffic, you need to allow port 443.
 ```
 sudo ufw allow 443/tcp
 ```
@@ -284,7 +284,7 @@ sudo ufw allow 443/tcp
 ```
 sudo ufw enable
 ```
-6. Check the status ```sudo ufw status```
+6. Check the status ```sudo ufw status```:
 ```
 Status: active
 
