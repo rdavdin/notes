@@ -251,7 +251,7 @@ Common Networking Ports:
 ![Firewalls Illustration](/imgs/linux/HardwareFirewall.gif)
 
 #### Intro to ```ufw```
-- Ubuntu comes with a firewall **pre-installed** called ```ufw``, but it's not active.
+- Ubuntu comes with a firewall **pre-installed** called ```ufw```, but it's not active.
 ```
 rdav@serverrdav:~$ sudo ufw status
 Status: inactive
@@ -267,35 +267,24 @@ Good practices for adding rules to our firewall:
 sudo ufw default allow outgoing
 ```
 **Remember:** The firewall now is also inactive. We actually have to **turn it on** ourselves **once we have everything how we want**.
-
 **Configuring Ports in ```ufw```**
-
 3. Allow the ports we know we'll need for the applications our server will be supporting. Surely, _ssh_
-
 ```
 sudo ufw allow ssh
 ```
-
 4. In case, the web application that we plan to support is a basic _HTTP_ server
-
 ```
 sudo ufw allow www
 ```
-
 **Remember:** ```www`` only allows _HTTP_ traffic. If you want to allow _HTTPS_ traffic, you need to allow port 443.
-
 ```
 sudo ufw allow 443/tcp
 ```
-
 5. That's it! It's time to enable our firewall
-
 ```
 sudo ufw enable
 ```
-
 6. Check the status ```sudo ufw status```
-
 ```
 Status: active
 

@@ -104,7 +104,7 @@ Hello, world!!!
 #### Cookies
 ##### What are cookies?
 - Cookies are a way that a _server_ can ask a _browser_ to retain a piece of information, and send it back to the server when the browser makes subsequent requests.
-- Every cookie has a name and a value, much like _variable_ in your code
+- Every cookie has a name and a value, much like _variables_ in your code
 - It also has **rules** that specify when the cookie should be sent back.
 
 ##### What are cookies for?

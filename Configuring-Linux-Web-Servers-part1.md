@@ -17,6 +17,11 @@
 #### Linux Commands
 [Ubuntu Server CLI](/Ubuntu_Server_CLI_pro_tips_2020-04.pdf)
 
+Find the locations of **all the files** installed as part of the package, using the ```dpkg``` utility.
+```
+dpkg -L apache2
+```
+
 #### Linux file system
 ##### _home_
 - All **standard users'** home directories will be within the _/home/_
