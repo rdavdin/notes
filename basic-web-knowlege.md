@@ -11,6 +11,7 @@
 - We can use programming languages like Javascript to manipulate these objects via their properties and methods to change the content, style, or behavior of the elements on the web document 
 <br/>
 - So, in terms of object-oriented programming, DOM is as a set of APIs to control the elements of web documents.
+
 ### 2. HTTP - Hypertext Transfer Protocol 
 To dive deeply into **HTTP** read [this thread on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP)
 - A computer can use the Internet to **shoot bits at** another computer

@@ -6,25 +6,31 @@
   python3 -m http.server 8000
   ```
 - Try access http://localhost:8000/ from your browser
+
 #### Three visible parts of a URI (_Uniform Resource Identifier_)
 ```https://en.widipedia.org/wiki/Fish```
 - ```https```: **scheme**
 - ```en.wikipedia.org```: **hostname**
 - ```/wiki/fish```: **path**
+
 ##### Scheme
 - _Scheme_ tells the client **how to go about accessing the resource**
 - **http**, **https**: tells ... 'Well, resources served by a web server'
 - **file**: tells ... 'Well, clients access a file on **the local filesystem**
 - There are many other URI schemes [the official list](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml)
+
 ##### Hostname
 - _Hostname_ tells the client **which server** to connect to
 - ```www.udacity.com``` or ```localhost```
+
 ##### Path
 - _Path_ tells the server which resource the client is looking for.
+
 ##### Relative URI references
 - ```<a href="cliffsofinsanity.png">cliffsofinsanity.png</a>```
 - Without _scheme_ or _hostname_
 - It's 'relative' to the context in which it appears - specially, the page it's on. In other words, the path is based on the path of the current page to determine.
+
 ### Hostnames and Ports
 - try ```host localhost``` or ```host www.google.com```
 - Thanks to **DNS** to lookup an ip address of a hostname
@@ -48,6 +54,7 @@ Host: localhost <enter twice>
 - Access http://localhost:9999/ with your web browser
 - In the terminal, receive the GET request from the browser
 - Response the browser with this response:
+
 ```
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -55,18 +62,19 @@ Content-length: 15
 
 Hello, world!!!
 ```
+
 - The browser receives the response with content _Hello, world!!!_
 
-```
-```
 ## What's an Apache or Nginx or Microsoft IIS?
 - The Web was originally designed to serve documents, not to deliver applications. Even today, a large amount of the data presented on any web site is _static content_ - images, HTML files, videos, downloadable files, and other media **stored** on disk.
 - Specialized web server programs - like [Apache](https://httpd.apache.org/), [Nginx](https://www.nginx.com/resources/wiki/), or [IIS](https://www.iis.net/) - can serve **static content** from disk storage very quickly and efficiently. They can also provide **access control** allowing only authenticated users to download particular static content.
+
 ##### Routing and load balancing
 - Some web applications have several different server components, each running as a **separate process**. One thing a specialized web server (Apache, Nginx, IIS) can do is **dispatch requests** to the particular backend servers that need to handle each request. This is called **_request routing_** or **_reverse proxying_**
 - Some web applications need to do a lot of work on the server side for each request, and need many servers to handle the load. Splitting requests up among several servers is called **_load balancing_**. 
 - For instance, you have three servers running the **same** application, and a _load balancer_ sits in front of them. When a request comes in, the _load balancer_ can decide which server to send the request to based on factors such as **server availability, server load, or geographic location.** This helps ensure that each server is **handling a manageable amount of traffic**.
 - _Load balancing_ also helps handle conditions where one server becomes unavailable, allowing other servers to pick up the slack.
+
 ##### _In-flight request_
 - _In-flight request_ meaning that the request **has 'taken off'** from the client to the server, but the response **has not 'landed'** again back at the client. 
 - A web service **cannot** just handle one request at a time and then go on to the next one; it has to be able to handle **many** at once.
@@ -79,6 +87,7 @@ Hello, world!!!
 --> 8,700 queries/second
 - 1 query takes 100 milliseconds (or 0.1 s)
 ```
+
 > So, about **870 requests** are going to be _in-flight_ at any instant. In other words, the server has to be able to process about **870 requests** at once.
 
 #### Caching
@@ -95,10 +104,12 @@ Hello, world!!!
 - Cookies are a way that a _server_ can ask a _browser_ to retain a piece of information, and send it back to the server when the browser makes subsequent requests.
 - Every cookie has a name and a value, much like _variable_ in your code
 - It also has **rules** that specify when the cookie should be sent back.
+
 ##### What are cookies for?
 - If the server sends **each client** a **unique** cookie value, it can use these to tell clients apart. This can be used to implement higher-level concepts on top of HTTP requests and responses - things like _session_ and _login_.
 - Cookies are used by analytics and advertising systems to track user activity from site to site.
 - Cookies are also sometimes used to store user preferences for a site.
+
 ##### How cookies happen?
 - The first time the client makes a request to the server, the sever sends back the response with a **Set-Cookie** header.
 - This header contains three things: _a cookie name_, _a value_, and _some attributes_.

@@ -1,4 +1,5 @@
-##[Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 3
+## [Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 3
+
 [Part 1](/Networking-for-Web-Developer-Part1.md), [Part 2](/Networking-for-Web-Developer-Part2.md)
 ### Protocol Layers
 - A protocol stack or a stack of networking protocols that supports all sorts of different internet applications.
