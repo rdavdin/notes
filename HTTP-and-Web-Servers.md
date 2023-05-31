@@ -8,7 +8,9 @@
 - Try access http://localhost:8000/ from your browser
 
 #### Three visible parts of a URI (_Uniform Resource Identifier_)
+
 ```https://en.widipedia.org/wiki/Fish```
+
 - ```https```: **scheme**
 - ```en.wikipedia.org```: **hostname**
 - ```/wiki/fish```: **path**
