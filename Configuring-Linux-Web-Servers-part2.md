@@ -284,7 +284,7 @@ sudo ufw allow 443/tcp
 ```
 sudo ufw enable
 ```
-6. Check the status ```sudo ufw status```:
+6. Check the status ```sudo ufw status```
 
 ```
 Status: active
