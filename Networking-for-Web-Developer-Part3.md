@@ -11,8 +11,8 @@ Questions:
   - And, how it hides the details of the lower layer, giving programmers a simpler interface?
 
 #### Protocol Stack
-![Protocol Stack](/imgs/protocol-stack-1.png)
-![Protocol Stack](/imgs/protocol-stack-2.png)
+![Protocol Stack](/imgs/basic/protocol-stack-1.png)
+![Protocol Stack](/imgs/basic/protocol-stack-2.png)
 #### Watching Ping and DNS in _tcpdump_
 Try the cmd below to catch traffic going between your host and the host at 8.8.8.8
 ```

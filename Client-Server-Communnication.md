@@ -133,7 +133,7 @@ So, while developing for HTTP/2:
 **Remember that** the time of encrypting a document is much longer than the time of hashing a document.
 ##### The TLS Handshake
 - TLS handshake occurs after a TCP connection has been opened via a TCP handshake
-![](imgs/ezgif.com-webp-to-jpg.webp)
+![TLS handshark](imgs/basic/ezgif.com-webp-to-jpg.jpg)
 - The purpose of the TLS handshake is to establish a secure connection. During the handshake, the client and server do the following:
   - Specify which version of TLS they will do. 
   - Decide on which cipher suites they will do.

@@ -14,7 +14,7 @@
 - Classes A, B, and C are used for addressing devices
 - Class D is for multicast groups
 - Class E is reserved for experimental use
-![IPv4 classes{caption=Source: howtonetwork.org}](imgs/ipv4_classes.png)
+![IPv4 classes{caption=Source: howtonetwork.org}](imgs/basic/ipv4_classes.png)
 
 **Private address ranges**
 - 10.0.0.0 to 10.255.255.255
@@ -45,7 +45,7 @@
 - **The subnets** are created by borrowing bits from the host section and using them as **subnet bits**.
 
 ##### Network Interfaces
-![Network Interfaces](/imgs/network-interfaces.png)
+![Network Interfaces](imgs/basic/network-interfaces.png)
 - Virtual machine interface connects the host operating system and the guest operating system
 - **Loopback interface** is a special interface that almost always has the IP address _127.0.0.1_ and the host name _localhost_, and allows programs to use _the network stack_ to talk to other programs on the same host.
   
@@ -56,7 +56,7 @@
 - So, hosts on one network that want to send traffic to the other one, forward the traffic to the router.
 - The host on a local network knows about a **default gateway**.
 - Computers  that are attached to the same switch or Wifi access point or other network hardware are normally **local** to each other. These computers **directly send** packets to one another without going through a different network, or without through the gateway.
-![Router and Default gateway](imgs/router_gateway.png)
+![Router and Default gateway](imgs/basic/router_gateway.png)
 
 ```
 ip route show default (Linux only)
@@ -66,11 +66,11 @@ netstat -nr (Linux, Mac, Unix)
 ```
 
 ##### NAT
-![Only one public IP address](/imgs/one-public-ip.png)
+![Only one public IP address](imgs/basic/one-public-ip.png)
 - Private IP addresses are used with a system called **NAT** or _Network Address Translation_
 - Whenever traffic goes between the private network behind the router and the public internet, the router has to re-write or translate to the network addresses on it.
 - The router maintains a map of which inside addresses and ports **are connected to** what pubic internet addresses and ports.
-![how NAT works](imgs/how-nat-works.png)
+![how NAT works](imgs/basic/how-nat-works.png)
 
 ##### Private and Public
 - Private addresses can't be used to directly on the public network since they are not actually unique.

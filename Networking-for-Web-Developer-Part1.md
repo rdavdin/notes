@@ -15,7 +15,7 @@ sudo apt-get install netcat-openbsd tcpdump traceroute mtr
 ping -c3 8.8.8.8
 ```
 - _ping_ is a command **for testing** whether your computer can send and receive network traffic with that address
-![knowhow from ping](/imgs/knowhow-ping.png)
+![knowhow from ping](imgs/basic/knowhow-ping.png)
 #### Ping vs HTTP
 - With _ping_, the message it sends, called an _Echo request_, is received by the destination system's **operating system**. It means that there's no _ping_ server, the Echo request just goes to the operating system on the receiving end, which sends a response back.
 - With an application protocol such as HTTP or SSH, there's a server program that composes a response and sends it back the client.
@@ -44,13 +44,13 @@ nc en.wikipedia.org 80
 ```
 
 
-![netcat and printf sends http requests](imgs/netcat-printf-send-req.png)
+![netcat and printf sends http requests](imgs/basic/netcat-printf-send-req.png)
 
 #### Different layers of network protocols
 - The http layer is implemented by **programs** such as web browsers and servers
 - The lower layer, TCP is implemented in the **operating system**
 - **Note:** _Netcat_ is a lower level tool than something like _curl_. The _nc_ command is a thing wrapper over TCP.
-![IETF model layers](/imgs/ietf-model-layers.png)
+![IETF model layers](imgs/basic/ietf-model-layers.png)
 - The concepts of the application layer: URLs, passwords, the head command, server headers, web pages. Things that make sense to specific applications such as web browsers or SSH clients.
 - Application protocols are based on protocols with a transport layer, like TCP and UDP.
 - Transport protocols are based on the internet layer, the one single protocol IP
@@ -58,7 +58,7 @@ nc en.wikipedia.org 80
 - Each of these layers depends on the one below it and provides particular guarantees to the layers above it. We can think of them as offering and using apis, separating out specific concerns and making it possible to **reuse** features.
 
 See, everything above or below goes through IP.
-![IP protocol is narrow](imgs/ietf-model-layers-ip-center.png)
+![IP protocol is narrow](imgs/basic/ietf-model-layers-ip-center.png)
 #### What really is a server? 
 - It's a program that handles requests from clients. 
 - But ... **How?**

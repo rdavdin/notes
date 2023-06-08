@@ -33,8 +33,8 @@ Now, configure Apache to hand-off certain requests to an application handler lik
 ```
 sudo apt install libapache2-mod-wsgi
 ```
-2. Configure Apache to handle requests using the WSGI module by editing the file ```/etc/apache2/sites-enabled/000-default```. This file tells Apache how to respond to requests, where to find the files for a particular site and much more. [Read more about Configuration Files on Apache](http://httpd.apache.org/docs/current/configuring.html)
-Add the line ```WSGIScriptAlias / /var/www/html/myapp.wsgi``` into the end of the block ```<VirtualHost>...</VirtualHost>```. [Read more about WSGIScriptAlias](https://modwsgi.readthedocs.io/en/develop/configuration-directives/WSGIScriptAlias.html)
+
+2. Configure Apache to handle requests using the WSGI module by editing the file ```/etc/apache2/sites-enabled/000-default```. This file tells Apache how to respond to requests, where to find the files for a particular site and much more ([Read Configuration Files on Apache](http://httpd.apache.org/docs/current/configuring.html)). Add the line ```WSGIScriptAlias / /var/www/html/myapp.wsgi``` into the end of the block ```<VirtualHost>...</VirtualHost>```. [Read more about WSGIScriptAlias](https://modwsgi.readthedocs.io/en/develop/configuration-directives/WSGIScriptAlias.html)
 
 #### The third step
 
@@ -138,3 +138,12 @@ Adjust the file ```reverse-proxy``` as below
 ```
 
 - _Proxy_ block is used to define multiple servers. The block is named ```balancer://mycluster``` (or any name you want) and consists of one or more ```BalancerMember```s, which specify the underlying backend server addresses.
+
+#### More info
+
+
+1. *mod_node* is a handler similar to the module *mod_wsgi* but for _Nodejs_.
+2. [Apache _Directive_ index](https://httpd.apache.org/docs/2.4/mod/directives.html)
+3. Overlapping Webspace:
+- _Location_ directive: the more **specific**, the more preferable
+- But, _Alias_ or _ProxyPass_ directives: the **order** in which they appear in the configuration file determines which one is applied in case of overlap. 
