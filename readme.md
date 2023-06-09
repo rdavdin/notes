@@ -14,5 +14,7 @@
 ### Programming Languages
 #### [Eloquent Javascript (3rd Edition)](https://docs.google.com/document/d/1ZU5A8xfihScfoau0FNzTwyubJY_BC38fkhAYDrjrf8o/edit?usp=sharing)
 
+### Articles
+1. [Inversion of Control Containers and Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html)
 ### Helpful sites
 [explainshell.com](https://explainshell.com/)
