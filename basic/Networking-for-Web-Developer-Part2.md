@@ -1,6 +1,5 @@
 ## [Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 2
-
-[Part 1](/Networking-for-Web-Developer-Part1.md)
+[Part 1](/Networking-for-Web-Developer-Part1.md) Part 2 [Part 3](./Networking-for-Web-Developer-Part3.md)
 ### Addressing and Networks
 #### Special Addresses
 **IPv4**
@@ -14,7 +13,7 @@
 - Classes A, B, and C are used for addressing devices
 - Class D is for multicast groups
 - Class E is reserved for experimental use
-![IPv4 classes{caption=Source: howtonetwork.org}](imgs/basic/ipv4_classes.png)
+![IPv4 classes{caption=Source: howtonetwork.org}](../imgs/basic/ipv4_classes.png)
 
 **Private address ranges**
 - 10.0.0.0 to 10.255.255.255
@@ -45,7 +44,7 @@
 - **The subnets** are created by borrowing bits from the host section and using them as **subnet bits**.
 
 ##### Network Interfaces
-![Network Interfaces](imgs/basic/network-interfaces.png)
+![Network Interfaces](../imgs/basic/network-interfaces.png)
 - Virtual machine interface connects the host operating system and the guest operating system
 - **Loopback interface** is a special interface that almost always has the IP address _127.0.0.1_ and the host name _localhost_, and allows programs to use _the network stack_ to talk to other programs on the same host.
   
@@ -66,11 +65,11 @@ netstat -nr (Linux, Mac, Unix)
 ```
 
 ##### NAT
-![Only one public IP address](imgs/basic/one-public-ip.png)
+![Only one public IP address](../imgs/basic/one-public-ip.png)
 - Private IP addresses are used with a system called **NAT** or _Network Address Translation_
 - Whenever traffic goes between the private network behind the router and the public internet, the router has to re-write or translate to the network addresses on it.
 - The router maintains a map of which inside addresses and ports **are connected to** what pubic internet addresses and ports.
-![how NAT works](imgs/basic/how-nat-works.png)
+![how NAT works](../imgs/basic/how-nat-works.png)
 
 ##### Private and Public
 - Private addresses can't be used to directly on the public network since they are not actually unique.

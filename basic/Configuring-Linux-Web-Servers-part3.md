@@ -1,5 +1,5 @@
 ## [Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299) - Part 3
-[Part 1](/Configuring-Linux-Web-Servers-part1.md) [Part 2](/Configuring-Linux-Web-Servers-part2.md)
+[Part 1](/Configuring-Linux-Web-Servers-part1.md) [Part 2](/Configuring-Linux-Web-Servers-part2.md) Part 3
 
 ### Web Application Servers
 

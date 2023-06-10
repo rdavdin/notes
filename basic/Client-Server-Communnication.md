@@ -71,7 +71,7 @@ So, while developing for HTTP/2:
 ##### CORS - Cross Origin Resource Sharing
 - This is the more secure and flexible solution
 - It allows the server side to specify which domain names are allowed to access which resources, and what types of requests are allowed too.
-- [Refer to Cors-in-Express/Nodejs](/Cors-in-Express.md)
+- [Refer to Cors-in-Express/Nodejs](./Cors-in-Express.md)
 - [More details on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 ###### Preflight requests?
 - A preflight request is a CORS mechanism that is used to check whether the actual request is safe to send.
@@ -133,7 +133,7 @@ So, while developing for HTTP/2:
 **Remember that** the time of encrypting a document is much longer than the time of hashing a document.
 ##### The TLS Handshake
 - TLS handshake occurs after a TCP connection has been opened via a TCP handshake
-![TLS handshark](imgs/basic/ezgif.com-webp-to-jpg.jpg)
+![TLS handshark](../imgs/basic/ezgif.com-webp-to-jpg.jpg)
 - The purpose of the TLS handshake is to establish a secure connection. During the handshake, the client and server do the following:
   - Specify which version of TLS they will do. 
   - Decide on which cipher suites they will do.

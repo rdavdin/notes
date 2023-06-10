@@ -1,4 +1,5 @@
 ## [Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299) - Part 1
+Part 1 [Part 2](./Configuring-Linux-Web-Servers-part2.md) [Part 3](./Configuring-Linux-Web-Servers-part3.md)
 
 ### Intro to Linux
 #### Distributions
@@ -12,10 +13,10 @@
 - _Debian_ is the parent distribution of _Ubuntu_
   - is known for stability and reliability
   - its software updates cycle is very slow compared to others
-![Linux Distribution](/imgs/linux/distributions.png)
+![Linux Distribution](../imgs/linux/distributions.png)
 
 #### Linux Commands
-[Ubuntu Server CLI](/Ubuntu_Server_CLI_pro_tips_2020-04.pdf)
+[Ubuntu Server CLI](./Ubuntu_Server_CLI_pro_tips_2020-04.pdf)
 
 Find the locations of **all the files** installed as part of the package, using the ```dpkg``` utility.
 ```
@@ -149,7 +150,7 @@ rdav@serverrdav:~$ echo $TERM
 xterm
 ```
 
-###### _PATH=\$PATH:/home/rdav/myprg_ vs _export PATH=\$PATH:/home/rdav/myprg_
+**_PATH=\$PATH:/home/rdav/myprg_ vs _export PATH=\$PATH:/home/rdav/myprg_**
 - What is a child process of the shell process? A child process that is created by the shell. For example:
   - type ```ls -la``` then press _enter_ in the shell
   - the shell will create a process from the binary file _ls_ under /bin directory, the process that has just created is a child process of the shell.

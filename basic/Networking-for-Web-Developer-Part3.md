@@ -1,6 +1,6 @@
 ## [Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 3
 
-[Part 1](/Networking-for-Web-Developer-Part1.md), [Part 2](/Networking-for-Web-Developer-Part2.md)
+[Part 1](/Networking-for-Web-Developer-Part1.md), [Part 2](/Networking-for-Web-Developer-Part2.md) Part 3
 ### Protocol Layers
 - A protocol stack or a stack of networking protocols that supports all sorts of different internet applications.
 - See, **HTTP** on **TCP** on **IP** on **Hardware**. 
@@ -11,8 +11,8 @@ Questions:
   - And, how it hides the details of the lower layer, giving programmers a simpler interface?
 
 #### Protocol Stack
-![Protocol Stack](/imgs/basic/protocol-stack-1.png)
-![Protocol Stack](/imgs/basic/protocol-stack-2.png)
+![Protocol Stack](../imgs/basic/protocol-stack-1.png)
+![Protocol Stack](../imgs/basic/protocol-stack-2.png)
 #### Watching Ping and DNS in _tcpdump_
 Try the cmd below to catch traffic going between your host and the host at 8.8.8.8
 ```
