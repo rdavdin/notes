@@ -22,7 +22,7 @@ In **plain Java**, you have to do a lot of tasks to handle fully requirements of
 - These beans can take advantage of the Spring's vast array of libraries to perform tasks like database access or HTML template rendering.
 - Spring allows us to create networks of **dependencies between beans**, which means we can write **single-purpose components** that rely on each other to perform complex tasks.
 
-![Web Application Architecture](imgs/../../../imgs/java_web/l0-10-intro-to-web-development.jpg "The Architecture of a Web Application")
+![Web Application Architecture](/imgs/java_web/l0-10-intro-to-web-development.jpg "The Architecture of a Web Application")
 
 #### Business Stakeholders
 
@@ -42,12 +42,14 @@ Spring takes care of the actions:
   1. Inversion of control (IoC)
   2. Dependency injection
   3. Common annotations
-  4. Implements and provides the foundation for other frameworks, such as Thymeleaf, MyBatis, Spring MVC, and many others.
+  4. Implements and provides the **foundation** for other frameworks, such as Thymeleaf, MyBatis, Spring MVC, and many others.
 
 Spring Boot brings all the functionality of Spring and some additional advantages, such as:
 
   1. It can automatically configure Spring and third-party libraries
   2. It provides necessary dependencies to **ease the build configuration**
 
-#### Covered Topics
-![Course Outline](imgs/../../../imgs/java_web/l0-30-course-outline.jpg "Course Outine")
+#### Covered Topics in the Course
+![Course Outline](/imgs/java_web/l0-30-course-outline.jpg "Course Outine")
+
+![Overview of Curriculum Goals](/imgs/java_web/l0-42-recap.jpg "Overview of Curriculum Goals")

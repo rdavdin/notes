@@ -1,4 +1,8 @@
 
+### Spring in Visual Studio Code
+
+[Fully VSCode extensions](https://github.com/spring-projects/sts4/tree/main/vscode-extensions)
+
 #### Install
 [Refer to this](https://code.visualstudio.com/docs/java/java-spring-boot)
 To develop a Spring Boot application in Visual Studio Code, you need to install the following:
@@ -19,7 +23,7 @@ code .
 ```
 - Open a java file under ```src/main``` 
 - Then ```F5``` to run the project
-- Test in the browser with url: [localhost:8080](localhost:8080)
+- Test in the browser with url: [http://localhost:8080](http://localhost:8080)
 
 #### Create a Spring Boot app
 1. Open Command Palette: _Ctrl+Shift+P_
