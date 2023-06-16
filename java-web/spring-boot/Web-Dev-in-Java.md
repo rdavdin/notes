@@ -108,18 +108,17 @@ Use [Spring Initializr](https://start.spring.io/), an official project generator
 
 4. Spring Starter Packs Quiz
 Pretend it's time to make a new project having a basic user interface, using the Spring Initialzr and you must decide _what requirements to include_. Assume that we would include at least _Spirng MVC, Thymeleaf, Spring Security, and MyBatis.
-
 Which of the following dependencies do you think we should include in a project that wants to use these tools to support REST web services and writes to a PostgreSQL database?
-  - [x] Spring Boot DevTools
-  - [x] Spring Web
-  - [ ] Spring Web Services
-  - [x] Thymeleaf
-  - [x] Spring Security
-  - [ ] JDBC API
-  - [x] MyBatis Framework
-  - [x] PostgreSQL Driver
-  - [ ] Spring Integration
-  - [ ] Spring Boot Actuator
+    - [x] Spring Boot DevTools
+    - [x] Spring Web
+    - [ ] Spring Web Services
+    - [x] Thymeleaf
+    - [x] Spring Security
+    - [ ] JDBC API
+    - [x] MyBatis Framework
+    - [x] PostgreSQL Driver
+    - [ ] Spring Integration
+    - [ ] Spring Boot Actuator
 
 **Why are these chosen?**
 
