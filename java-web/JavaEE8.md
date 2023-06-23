@@ -44,7 +44,7 @@ Before it can be executed, a web component, a enterprise bean or an application 
 - is the interface between Java EE application **clients** (special java **SE apps** that use Java EE server components) and the Java EE server.
 - runs on the **client machine** and is a **gateway** between the client app and the Java EE server components that the client uses.
 
-Generally speaking, we should understand **why a container is a interface between a component and an application server**, and **why a container is a service for a component?** That's because:
+Generally speaking, we should understand **why a container is an interface between a component and an application server**, and **why a container is a service for a component?** That's because:
 
 - Java EE platform: is a set of specifications and APIs that provide a standard for developing and deploying enterprise applications.
 - A Java application server/A Java EE server like Apache Tomcat, GlashFish, Oracle Weblogic Server, etc. that implements the set of specifications. You, as a web developer, don't care more about how they are implemented, you just care how to use them. They are already services.
