@@ -58,7 +58,7 @@ Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp0
 #### Spring Applications
 ###### Spring's place in an application server?
 - Servlets and application severs together **form** a powerful platform. Spring is something built on top of that platform.
-- Spring application components as classes are instantiated and managed by **the Spring IoC container** just like an application server instantiates and manages servlets.
+- Spring application components as classes are instantiated and managed by **the Spring IoC container**. This is similar to the mechanism an application server instantiates and manages servlets.
 - The Spring container is piggybacked on a servlet instance, meaning that the overall lifecycle of the Spring application components **is bounded** by the lifecycle of the servlet they're running on.
 - In addition, Spring can re-route requests from the Servlet layer to our application components according to whatever logic we dictate.
 
