@@ -32,6 +32,7 @@ So, it's extremely flexible for us to define any number of possibly variable com
 
 #### What game do you play with Spring?
 **Separation of Concerns**
+
 When developing a Spring application, the goal of a developer:
 - is to **determine which components** are required.
 - ensures that each component's purpose and a set of responsibilities are well defined. 

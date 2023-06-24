@@ -3,6 +3,7 @@
 **Enterprise application** is a **large-scale, multitiered, scalable, reliable, and secure network** application.
 
 **Multitiered Aplications**
+
 ![](/imgs/java_web/javaeett_dt_001.png) 
 *Source: [The Java EE Tutorial](https://javaee.github.io/tutorial/overview004.html)*
 

@@ -2,7 +2,6 @@
 
 #### How does an application interact with a database?
 
-[Read: Java & Database: Libraries and APIs](https://www.marcobehler.com/guides/java-databases)
 
 **What is JDBC API?**
 
@@ -12,9 +11,12 @@
   2. Send queries and updates statements to the database
   3. Retrieve and process the results received from the database in answer to your query
 
-[Read more about JDBC](https://docs.oracle.com/javase/tutorial/jdbc/overview/index.html)
+Read the following articles: 
 
-**Relationship between _Application_, _ORM_, _JDBC API_, _JDBC Driver_, _Database**
+- [JDBC - a short guide](https://www.marcobehler.com/guides/jdbc)
+- and [JDBC Overview](https://docs.oracle.com/javase/tutorial/jdbc/overview/index.html)
+
+**Relationship between _Application_, _ORM_, _JDBC API_, _JDBC Driver_, _Database_**
 
 ![](/imgs/java_web/data-flow-app-2-db.png)
 
@@ -37,7 +39,7 @@ Compared to a '**deep**' ORM layer, MyBatis gives you more control and flexibili
 
 With MyBatis, you can still **write SQL queries** and have **direct access to the JDBC API** when necessary, while benefiting from the convenience of mapping Java objects to database tables. 
 
-**How to Work with MyBatis?**
+**How to work with MyBatis?**
 
 MyBatis is mostly used through **interface definitions**. MyBatis **automatically generates** classes that implement the interface and **makes them available** as **Spring beans** in the Spring application context.
 
@@ -54,7 +56,7 @@ public interface UserMapper {
 
 By default, MyBatis will match query result columns to Java class filds by name and uses getters and setters to access them. Just like any POJO. 
 
-If Java filed names don't match the SQL columns names exactly, you're going to do some additional configuration.
+If Java field names don't match the SQL columns names exactly, you're going to do some additional configuration.
 
 ```
 @Mapper
@@ -74,6 +76,9 @@ public interface UserMapper {
 **Where is MyBatis in the Onion Architecture?**
 ![](/imgs/java_web/l4-29-mybatis-mappers.png)
 _MyBatis Mappers lie at the Center of Our Onion Architecture_
+
+**Noted main points from the article: [Java & Databases: An Overview of Libraries and APIs](/articles/Java-and-Database-Overview.md)**
+
 
 #### User Authentication
 _```AuthenticationService.java```_ implements the methods for checking user credentials. 
