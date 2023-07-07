@@ -54,7 +54,7 @@ public interface UserMapper {
 }
 ```
 
-By default, MyBatis will match query result columns to Java class filds by name and uses getters and setters to access them. Just like any POJO. 
+By default, MyBatis will match query result columns to Java class fields by name and uses getters and setters to access them. Just like any POJO. 
 
 If Java field names don't match the SQL columns names exactly, you're going to do some additional configuration.
 
@@ -67,6 +67,8 @@ public interface UserMapper {
    int insert(User user);
 }
 ```
+
+**IMPORTANT:** The order of fields in a model constructor **must be the same** the order of columns in a table. This helps to create instances of a model properly.
 
 **Annotations**
 - _@Mapper_
