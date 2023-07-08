@@ -12,4 +12,5 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 3. [Spring Boot Basics for Web Development](./spring-boot/Spring-Boot-Basics-for-Web-Dev.md)
 4. [Spring MVC and Thymeleaf](./spring-boot/Spring-MVC-and-Thymeleaf.md)
 5. [Data Persistence and Security](./spring-boot/Data-Persistence-and-Security.md)
+6. [The Final Project of the Course](https://github.com/rdavdin/CloudStorage)
 
