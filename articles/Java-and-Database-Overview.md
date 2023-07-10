@@ -41,7 +41,7 @@ See, both queries look very much like their SQL equivalents, but not that you ar
 1. Book [Java Persistence with Hibernate](https://www.manning.com/books/java-persistence-with-hibernate-second-edition)
 2. [Vlad Mihalcea’s](https://vladmihalcea.com/) or [Thorben Janssen’s Sites](https://thoughts-on-java.org/)
 
-#### Java Persistence API (JPI)?
+#### Java Persistence API (JPA)?
 
 - JPA is merely a specification, not an implementation or library. So, JPA defines a **standard** what features a library must support to be _JPA-compliant_. _Hibernate_, _EclipseLink_, or _TopLink_ that all implement the JPA spec.
 - So, instead of writing Hibernate-specific code or EclipseLink-specific code, you write JPA-specific code. And then it is just a matter of **adding some libraries (Hibernate) and configuration file to your JPA project**, and you can access your database.
@@ -49,7 +49,7 @@ See, both queries look very much like their SQL equivalents, but not that you ar
 
 **Remember:**
 - In theory, JPA should describe its spec first, then implementations follow.
-- But, in practice, as Hibernate is **by far the most popular JPA implementation**, features in JPA are often "a heavily-inspired-**subset** of Hibernate features.
+- But, in practice, as Hibernate is **by far the most popular JPA implementation**, features in JPA are often "a heavily-inspired-**subset**" of Hibernate features.
 
 **JPQL - JPA's Query Language**
 

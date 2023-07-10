@@ -14,3 +14,8 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 5. [Data Persistence and Security](./spring-boot/Data-Persistence-and-Security.md)
 6. [The Final Project of the Course](https://github.com/rdavdin/CloudStorage)
 
+#### Web Services and APIs
+
+1. [Overview](./web-services-and-apis/overview.md)
+2. [Rest APIs](./web-services-and-apis/rest-apis.md)
+
