@@ -17,7 +17,7 @@ There are 4 principles that APIs follow:
 3. Resources can be represented in multiple formats, such as HTML, XML, plain text, and other formats defined by a media type.
 4. Communication between the client and server (i.e. endpoint) is stateless. This means the server will not remember or store any state about the client that made the call.
 
-#### Some packs are necessary for developing a restful app in Spring Boot
+#### Dependencies are necessary for developing a restful app in Spring Boot
 
 1. **Spring Web** (spring-boot-starter-web): This starter pack is used for web application development and automatically adds libraries like **Spring MVC**, **REST**, **Tomcat**, and **Jackson**.
 2. **H2 Database** (com.h2database): This starter pack is used for the H2 in-memory database.
