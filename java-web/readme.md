@@ -18,4 +18,6 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 
 1. [Overview](./web-services-and-apis/overview.md)
 2. [Rest APIs](./web-services-and-apis/rest-apis.md)
+3. [GraphQL APIs](./web-services-and-apis/graphgl-apis.md)
+4. [Microservices](./web-services-and-apis/microservices.md)
 
