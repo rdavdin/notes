@@ -20,4 +20,5 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 2. [Rest APIs](./web-services-and-apis/rest-apis.md)
 3. [GraphQL APIs](./web-services-and-apis/graphgl-apis.md)
 4. [Microservices](./web-services-and-apis/microservices.md)
-
+5. [Security](./web-services-and-apis/security.md)
+6. [Consume REST](./web-services-and-apis/consuming-soap-rest.md)
