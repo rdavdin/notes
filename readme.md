@@ -1,3 +1,7 @@
+## My Notes
+
+I took these notes of computer subjects while learning and reading.
+
 ### Web
 #### [Basic Web Knowledge](./basic/basic-web-knowlege.md)
 #### [Client Server Communication](./basic/Client-Server-Communnication.md)

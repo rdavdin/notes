@@ -1,5 +1,6 @@
-##[Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 1
-Part 1 [Part 2](./Networking-for-Web-Developer-Part2.md) [Part 3](./Networking-for-Web-Developer-Part3.md)
+## [Networking for Web Developers - Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256) - Part 1
+
+[Part 2](./Networking-for-Web-Developer-Part2.md) [Part 3](./Networking-for-Web-Developer-Part3.md)
 
 #### Networking Tools
 Update packages:
