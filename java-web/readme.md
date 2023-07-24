@@ -26,3 +26,5 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 8. [Unit & Integration Tests](./web-services-and-apis/unit-integration-tests.md)
 
 #### Data Stores and Persistance
+
+1. [Data in Multitier Architecture](./data-stores-and-persistence/data-in-multitier-architecture.md)
