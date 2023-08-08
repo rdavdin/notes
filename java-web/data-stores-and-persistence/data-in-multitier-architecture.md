@@ -8,6 +8,7 @@
 
 1. Value types vs Entity types
 2. Basic Types in Java and JDBC
+   
    A Basic Type acts as an **intermediary**   between a Java field type and a type definition provided by JDBC.
 3. Identifiers
 4. Relationships
@@ -345,7 +346,7 @@ public class Person {
 
 ##### Unidirectional - @OneToMany
 
-- You only need to specify the Entity on a single side of the relationship. For Example, this is the Person class showing a unidirectional @OneToMany relationship to Outfit.
+- You only need to specify the Entity on a single side of the relationship. For example, this is the Person class showing a unidirectional @OneToMany relationship to Outfit.
 
 ```
 @Entity
@@ -580,6 +581,51 @@ _No parent class created_
 ##### ```@JSONView``` annotation
 
 - Annotation that filters which Entity data is visible to the Presentation layer. With this approach, the principle of _Separation of Concerns_ affected.
+
+**How to apply @JSONView?**
+
+- Step 1: Create an interface 
+```
+public class Views {
+    public interface Public {}
+}
+ ```
+
+- Step 2: Determine which fields of an entity should be filtered with ```@JSONView```
+
+```
+@Entity
+@Table(name="deliveries")
+public class Delivery {
+    @JsonView(Views.Public.class)
+    @Nationalized
+    private String recipientName;
+
+    @JsonView(Views.Public.class)
+    @Column(name="address_full", length=500)
+    private String address;
+
+    ...
+}
+ ``` 
+- Step 3: Add ```@JSONView``` to the request handlers
+
+```
+@RestController
+@RequestMapping("/delivery")
+public class DeliveryController {
+    @Autowired
+    private DeliveryService deliveryService;
+
+    @JsonView(Views.Public.class)
+    @GetMapping("/list/{name}")
+    public List<Delivery> getDeliveries(@PathVariable String name) {
+        return deliveryService.getDeliveries(name);
+    }
+
+    ...
+}
+ ```
 
 **@JSONView summary**
 

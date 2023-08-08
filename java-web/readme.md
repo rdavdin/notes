@@ -27,4 +27,7 @@ Notes are mainly from the course [Become a Java Web Developer](https://www.udaci
 
 #### Data Stores and Persistance
 
+[An example demo all features of the lesson](https://github.com/rdavdin/datastore_persistence.git)
+
 1. [Data in Multitier Architecture](./data-stores-and-persistence/data-in-multitier-architecture.md)
+2. [Java Persistence API (JPA)](./data-stores-and-persistence/java-persistence-api-jpa.md)
