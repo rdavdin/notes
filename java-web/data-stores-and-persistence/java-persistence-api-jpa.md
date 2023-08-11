@@ -316,7 +316,9 @@ This way, entities have a common interface and a common implementation.
 **Remind:**
 
 **JPA**: Defines the API for using Java objects to map to database tables
+
 **Hibernate**: Implement the JPA API
+
 **Spring Data JPA**: **code** and **code generation tools** that help use JPA without writing quite as much of our own boilerplate.
 
 - Spring Data JPA already provides the implementation for default methods.
