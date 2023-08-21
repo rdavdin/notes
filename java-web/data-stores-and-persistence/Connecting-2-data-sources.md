@@ -210,12 +210,20 @@ public class Datasource2Config {
   - **Always**: Initialization for both embedded and external databases.
   - **Never**: No initialization for either embedded or external databases.
 
+**Platform-specific Initialization**
+
+You may provide additional initialization scripts for specific platforms:
+
+- ```schema-${platform}.sql``` and ```data-${platform}.sql```
+- By setting property ```spring.datasource.platform={platform}```
+- For example: ```spring.datasource.platform=foo``` tells Spring to try and execute ```schema-foo.sql``` and ```data-foo.sql```.
+
 **Good Practice:** 
 
 - In development: set **Always**
 - In production: set **Never**
 
-**defer-datasource-initialization**
+***defer-datasource-initialization***
 
 - By default, ```data.sql``` scripts get executed before the Hibernate is initialized. We need to set ```spring.jpa.defer-datasource-initialization``` to ```true``` so that Hibernate creates our tables before inserting the data into them.
 - ```defer-datasource-initialization=true```: 

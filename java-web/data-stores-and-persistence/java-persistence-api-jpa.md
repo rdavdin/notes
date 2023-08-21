@@ -1,4 +1,4 @@
-### Java Persistence API (JPA)
+## Java Persistence API (JPA)
 
 #### Persistence Context
 
@@ -281,7 +281,7 @@ See, ```com.udacity.jdnd.course3.controller.PersonComposerDTO```: the fully path
 
 #### Repository Pattern
 
-So far, we see that each repository has a interface similar to a collection in Java. It means that these repositories have similar methods such ```save, delete, findById, etc.```.
+So far, we see that each repository has an interface similar to a collection in Java. It means that these repositories have similar methods such ```save, delete, findById, etc.```.
 
 ![](/imgs/java_web/screen-shot-2020-03-19-at-3.13.32-pm.png)
 _A repository has a similar interface to a collection_
@@ -311,7 +311,7 @@ This way, entities have a common interface and a common implementation.
 
 **This is the way applied by Spring Data JPA**
 
-#### Spring Data JPA
+### Spring Data JPA
 
 **Remind:**
 
@@ -363,6 +363,9 @@ public interface HumanoidRepository extends JpaRepository<Humanoid, Long> {
    List<Humanoid> findAllNamedQuery(Outfit outfit);
 }
  ```
+
+![](/imgs/java_web/data-layer-db.png)
+_The place of components between Java app with relational databases_
 
 [Spring Data JPA Documentation on Spring](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories)
 

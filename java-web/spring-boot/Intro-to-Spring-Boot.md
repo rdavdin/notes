@@ -10,9 +10,9 @@
 
 3 main components in a standard web application:
 
-- Data Storage: How the data is stored?
-- Application Logic: What is the service of your application providing for users?
-- Client Access: What type of client accesses to the service?
+- **Data Storage:** How the data is stored?
+- **Application Logic:** What is the service of your application providing for users?
+- **Client Access:** What type of client accesses to the service?
 
 In **plain Java**, you have to do a lot of tasks to handle fully requirements of 3 above main components in a web application. With Spring, the solution to all of these is actually just **a Spring Boot application**. 
 

@@ -19,7 +19,7 @@ Wait ... Is there some relationship between IoC with **Dependency Injection** (D
 Spring is an implementation of Inversion of Control (IoC), in particular Dependency Injection.
 
 When we define a component, we also define its dependencies, other components that the component needs to perform its function.
-Then, when we run our app, Spring ensures that all components are created in a compatible order, and **inects dependencies** in the components that declared them.
+Then, when we run our app, Spring ensures that all components are created in a compatible order, and **injects dependencies** in the components that declared them.
 ![](/imgs/java_web/l2-10-big-picture.png)
 *The Spring Transformation*
 
@@ -39,7 +39,7 @@ When developing a Spring application, the goal of a developer:
 
 **2 primary types of java classes** you will need to implement in a spring application
 
-- Data Types are simple classes to **store and represent complex data**. Data types are constructed on-demand to **satisfy certain features**. It means that we can create a new object to satisfy for our purpose. For example, we might create a new object of UserProfile when a client requests info about a specific usr profile. But, we won't just have an instance hanging around.
+- Data Types are simple classes to **store and represent complex data**. Data types are constructed on-demand to **satisfy certain features**. It means that we can create a new object to satisfy for our purpose. For example, we might create a new object of UserProfile when a client requests info about a specific user profile. But, we won't just have an instance hanging around.
 - Components, on the other hand, are **persistent services** we can define for Spring to manage. Spring will instantiate these services, usually at the time of starting server and make them **available throughout** our application. In Spring, component classes are typically instantiated as **singletons**, meaning that only **one instance** of the class is created and managed by the Spring container.
 - Do you understand the meaning of the word 'service'? Something like a library that provides methods related to a specific purpose.
 
@@ -92,6 +92,24 @@ Spring Boot is designed with **convention** over configuration, which means that
 
 #### @PostConstruct
 - _@PostConstruct_ annotation tells Spring to call a bean method annotated with _@PostConstruct_ immediately **after** instantiating the bean and placing it in the application context.
+
+```
+@Service
+public class MessageService {
+  private String message;
+
+  public MessageService(String msg){
+    this.message = msg;
+  }
+
+  //other methods
+
+  @PostConstruct
+  public void postConstruct(){
+    System.out.println("Service MessageService is created!");
+  }
+}
+ ```
 ### Quizzes
 
 1. What benefits of Spring help enable structured software development?
