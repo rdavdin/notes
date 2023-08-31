@@ -179,7 +179,7 @@ public class SecurityConfig {
 ```
 
 
-**Generally speaking**, as I understand Spring Security framework belongs to the controller layer of the Onion Architecture because of using the authentication services. In addition, it is similar to a kind of **middleware in Node.js**. Both Node.js middleware and Spring Security serve as an additional layer of functionality that **sits between the server and the application logic**.
+**Generally speaking**, as I understand Spring Security framework is similar to a kind of **middleware in Node.js**. Both Node.js middleware and Spring Security serve as an additional layer of functionality that **sits between the server and the application logic**.
 
 **Suggested Reading**
 1. [Book: _Patterns of Enterprise Application Architecture_ - Martin Fowler](https://martinfowler.com/books/eaa.html)

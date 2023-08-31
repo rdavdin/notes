@@ -25,7 +25,8 @@ Which Java application server should you choose for your app?
 
 - The core difference is that application servers have **full** support for the **Java EE spec**, while web servers support a **small subset** of that functionality.
 
-![Web server vs application server](/imgs/java_web/javaee-spec-supp-2-1-768x381.webp) *Source: https://www.baeldung.com/java-servers*
+![Web server vs application server](/imgs/java_web/javaee-spec-supp-2-1-768x381.webp) 
+*Source: https://www.baeldung.com/java-servers*
 
 #### Java Servlets
 
@@ -42,7 +43,8 @@ The server interacts with each servlet through 3 standard methods:
 *The Lifecycle of a Servlet in an Application Server*
 
 ![](/imgs/java_web/javaeett_dt_013.png)
-Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp001.html#GEYSJ)
+
+_Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp001.html#GEYSJ)_
 
   1. The client sends an HTTP request to the web server.
   2. A web server that implements Java Servlet and JavaServer Pages technology **converts the request** into an ```HTTPServletRequest``` object.
@@ -63,7 +65,8 @@ Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp0
 - In addition, Spring can re-route requests from the Servlet layer to our application components according to whatever logic we dictate.
 
 ![](/imgs/java_web/spring-place-in-app-server.png)
-*Spring's place in an application server*
+
+_Spring's place in an application server_
 
 ###### So, Why Spring? What advantages?
 - Spring framework helps **automatically link** Spring application components thanks to the implementation of Spring, the dependency injection (DI) mechanism.
@@ -107,7 +110,7 @@ Use [Spring Initializr](https://start.spring.io/), an official project generator
       - [x] Inject object instances into services that need to use them
 
 4. Spring Starter Packs Quiz
-Pretend it's time to make a new project having a basic user interface, using the Spring Initialzr and you must decide _what requirements to include_. Assume that we would include at least _Spirng MVC, Thymeleaf, Spring Security, and MyBatis.
+Pretend it's time to make a new project having a basic user interface, using the Spring Initialzr and you must decide _what requirements to include_. Assume that we would include at least _Spirng MVC, Thymeleaf, Spring Security, and MyBatis_.
 Which of the following dependencies do you think we should include in a project that wants to use these tools to support REST web services and writes to a PostgreSQL database?
     - [x] Spring Boot DevTools
     - [x] Spring Web

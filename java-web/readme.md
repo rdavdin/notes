@@ -37,20 +37,20 @@ Notes are mainly from the course [Java Web Developer Nanodegree](https://www.uda
 #### Course 4: Security and DevOps
 
 1. [Authentication and Authorization](./security-and-devops/authentication-authorization.md)
+2. [Testing and Logging](./security-and-devops/testing-and-logging.md)
+3. [CI/CD](./security-and-devops/ci-cd.md)
+
 ### Further Reading
 1. [Inversion of Control Containers and Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html)
 
 #### Backup some links to read later
 
-[JPA Join Types](https://www.baeldung.com/jpa-join-types)
-[Spring Data JPA - Reference Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#preface)
+1. [JPA Join Types](https://www.baeldung.com/jpa-join-types)
+2. [Spring Data JPA - Reference Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#preface)
 
-[Jackson JSON Tutorial](https://www.baeldung.com/jackson)
-[Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
+3. [Jackson JSON Tutorial](https://www.baeldung.com/jackson)
+4. [Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
 
-
-[How to synchronize bidirectional entity associations with JPA and Hibernate](https://vladmihalcea.com/jpa-hibernate-synchronize-bidirectional-entity-associations/)
-[The best way to use JPA bidirectional sync methods](https://vladmihalcea.com/jpa-bidirectional-sync-methods/)
-[Hibernate Best Practices](https://thorben-janssen.com/hibernate-best-practices/)
-
-[Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.core)
+5. [How to synchronize bidirectional entity associations with JPA and Hibernate](https://vladmihalcea.com/jpa-hibernate-synchronize-bidirectional-entity-associations/)
+6. [The best way to use JPA bidirectional sync methods](https://vladmihalcea.com/jpa-bidirectional-sync-methods/)
+7. [Hibernate Best Practices](https://thorben-janssen.com/hibernate-best-practices/)
