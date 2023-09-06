@@ -62,3 +62,62 @@ At http://localhost:8080/swagger-ui.html
 
 ##### Further Reading
 [Setting Up Swagger 2 with a Spring REST API Using Springfox](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+
+### Updated to Spring Boot 3.x
+
+**Dependency** 
+
+```
+<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.2.0</version>
+</dependency>
+ ```
+
+**Change *SwaggerConfig.java***
+
+```
+@Configuration
+public class SwaggerConfig {
+    @Bean
+    public OpenAPI api(){
+        return new OpenAPI().info(new Info().title("This is a title").description("Description here").version("0.1"));
+    }
+}
+ ```
+**Configure to bypass Spring Security?**
+
+```
+@Bean
+public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    http.authorizeHttpRequests((authReqs) -> {
+            authReqs.requestMatchers(AntPathRequestMatcher.antMatcher("/swagger-ui.html")).permitAll();
+            authReqs.requestMatchers(AntPathRequestMatcher.antMatcher("/swagger-ui/**")).permitAll();
+            authReqs.requestMatchers(AntPathRequestMatcher.antMatcher("/v3/api-docs/**")).permitAll();
+            authReqs.requestMatchers(AntPathRequestMatcher.antMatcher("/hello")).permitAll();
+            authReqs.anyRequest().authenticated();
+        }
+    );
+    http.httpBasic(Customizer.withDefaults());
+    return http.build();
+}
+ ```
+
+**Custom properties**
+
+- Specify the path of the OpenAPI documentation, *default: /v3/api-docs*
+
+```
+springdoc.api-docs.path=/api-docs
+ ```
+- Specify the path of the Swagger UI, *default: /swagger-ui.html*
+```
+springdoc.swagger-ui.path=/swagger-ui.html
+ ```
+- Enable or disable Swagger UI
+
+```
+springdoc.swagger-ui.enabled=true
+ ```
