@@ -38,3 +38,80 @@ Features of MSA:
   
   - A server-side component is the registry in which all microservices register themselves. It means that a microservice registers itself with the Eureka server by providing its own **metadata**, such as its name, IP address, and port.
   - A client-side component that allows microservices use the Eureka client to register; once the registration is complete, it notifies the server of its existence.
+
+##### Create a Eureka server
+
+- Need 2 dependencies:
+  -  ```Config Client``` for ```spring-cloud-starter-config```
+  -  ```Eureka Server``` for ```spring-cloud-starter-netflix-eureka-server```
+
+![](/imgs/java_web/eureka-server-dependencies.png)
+_Only 2 these dependencies for creating a Eureka server_
+
+**Note:** Should use tool [Initializr](https://start.spring.io/) to generate ```pom.xml``` file properly
+
+- Add ```@EnableEurekaServer```:
+
+```
+@SpringBootApplication
+@EnableEurekaServer
+public class EurekaServerApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaServerApplication.class, args);
+	}
+}
+ ```
+
+- Update properties file to avoid registering itself as a client
+
+```
+spring.application.name=eureka-server
+server.port=8761
+
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+
+spring.cloud.config.import-check.enabled=false
+ ```
+
+##### Convert a RESTful app to a microservice 
+
+- Add additional dependencies: 
+  - ```Config Client``` for ```spring-cloud-starter-config```
+  - ```Eureka Discovery Client``` for ```spring-cloud-starter-netflix-eureka-client```
+
+![](/imgs/java_web/eureka-client-dependencies.png)
+_Add more additional dependencies for Eureka client_
+
+**Note:** Should use tool [Initializr](https://start.spring.io/) to generate ```pom.xml``` file properly
+
+- Add ```@EnableEurekaClient```:
+
+```
+@SpringBootApplication
+@EnableEurekaClient
+public class PricingServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(PricingServiceApplication.class, args);
+    }
+}
+ ```
+
+- Update properties file to register itself as a client to Eureka server
+
+```
+spring.application.name=pricing-service
+server.port=8082
+
+eureka.client.service-url.default-zone=http://localhost:8761/eureka/
+eureka.instance.prefer-ip-address=true
+
+spring.cloud.config.import-check.enabled=false
+ ```
+
+**Check Eureka server's dashboard at [http://localhost:8761/](http://localhost:8761/)**
+
+![](/imgs/java_web/eureka-dashboard.png)
+_2 services Boogle-maps and Pricing-service are registered successfully_
+
+**Further Reading [Introduction to Spring Cloud Netflix – Eureka](https://www.baeldung.com/spring-cloud-netflix-eureka)**
