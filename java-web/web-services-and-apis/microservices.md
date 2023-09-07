@@ -103,11 +103,17 @@ public class PricingServiceApplication {
 spring.application.name=pricing-service
 server.port=8082
 
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
 eureka.client.service-url.default-zone=http://localhost:8761/eureka/
 eureka.instance.prefer-ip-address=true
 
 spring.cloud.config.import-check.enabled=false
  ```
+
+**NOTE:** Following [this document](https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html#_authenticating_with_the_eureka_server), the property ```eureka.client.serviceUrl.defaultZone``` **NOT** ```eureka.client.service-url.default-zone```. I got trouble with the issue from this property when trying deploy the Eureka server on a server instead of localhost:
+
+- Work as expectation: ```eureka.client.serviceUrl.defaultZone=http://192.168.1.27:8761/eureka/```
+- **NOT work**: ```eureka.client.service-url.default-zone=http://192.168.1.27:8761/eureka/```
 
 **Check Eureka server's dashboard at [http://localhost:8761/](http://localhost:8761/)**
 
