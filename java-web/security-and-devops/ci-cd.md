@@ -138,7 +138,7 @@ Select all statements that are correct with regard to a CI/CD pipeline?
 - [Jenkins official documentation](https://www.jenkins.io/doc/pipeline/tour/getting-started/)
 - [Build a Java App with Maven](https://www.jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
 
-### Deploy a java Spring Boot app
+### Deploy a Spring Boot app
 
 **1. Deploy a war file built on a web server (like Tomcat) installed on EC2 instance**
 - *Step 1:* Update ```pom.xml``` :
@@ -205,3 +205,32 @@ scp -i .ssh/rdav-aws-server.pem demo.war ec2-user@52.77.233.139:/usr/local/tomca
 - [Spring Framework 6 Requires JDK 17+ and Jakarta EE 9++](https://github.com/spring-projects/spring-framework/wiki/What%27s-New-in-Spring-Framework-6.x/#whats-new-in-version-60)
 
 - So, just use Jenkins for Spring applications developed with Spring 5.x.
+
+#### Set environment with ```.env``` file
+
+- We can load environment variables with [dotenv-java](https://github.com/cdimascio/dotenv-java)
+- How to use dotenv-java? [Look at a Maven example here](https://github.com/cdimascio/dotenv-java/blob/master/examples/maven-simple/src/main/java/io/github/cdimascio/examples/dotenv/Main.java)
+
+```
+<dependency>
+    <groupId>io.github.cdimascio</groupId>
+    <artifactId>dotenv-java</artifactId>
+    <version>3.0.0</version>
+</dependency>
+ ```
+
+![](/imgs/java_web/env-file.png)
+_The place of .env file_
+
+![](/imgs/java_web/env-usage.png)
+_The way of using dotenv package_
+
+**Note:** It's important to bear in mind that if **sensitive data** is stored in .env, that it must **not be stored under version control**.
+
+#### [Skipping Tests with Maven](https://www.baeldung.com/maven-skipping-tests)
+
+```
+<properties>
+    <maven.test.skip>true</maven.test.skip>
+</properties>
+ ```

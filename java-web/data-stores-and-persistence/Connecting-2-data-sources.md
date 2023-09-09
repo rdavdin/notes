@@ -12,6 +12,18 @@
 - Why needs JDBC **connection pooling**? Connection pooling is a pool containing already open connections. With these open connections they can be re-used. It is more efficient in terms of performance because it takes time to open a connection to database.
 - **DataSource** is an interface that represents a connection pool. There are many implementations for DataSource interface, such as: **[HikariCP](https://github.com/brettwooldridge/HikariCP)**, **[Tomcat JDBC Connection Pool](https://tomcat.apache.org/tomcat-9.0-doc/jdbc-pool.html)**, **[Oracle's UCP](https://docs.oracle.com/database/121/JJUCP/intro.htm#JJUCP8109)**, etc. Spring uses HikariCP by default.
 
+### Add Connector dependency 
+
+- To use external database, we must add connector dependency to ```pom.xml```. For example:
+
+```
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
+</dependency>
+ ```
+
 ### Ways to configure DataSources in Spring
 
 ##### Way 1: From ```application.properties``` file
