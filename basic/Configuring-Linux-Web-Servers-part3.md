@@ -1,5 +1,5 @@
 ## [Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299) - Part 3
-[Part 1](/Configuring-Linux-Web-Servers-part1.md) [Part 2](/Configuring-Linux-Web-Servers-part2.md) Part 3
+[Part 1](./Configuring-Linux-Web-Servers-part1.md) [Part 2](./Configuring-Linux-Web-Servers-part2.md) Part 3
 
 ### Web Application Servers
 
@@ -57,11 +57,27 @@ That's it! Try reloading the browser with an appropriate url which is ```localho
 
 ###### Some useful commands
 
+- link or unlink 
+
 ```
 sudo ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 sudo unlink /etc/apache2/sites-enabled/000-default.conf
 sudo systemctl restart apache2.service
 ```
+
+- enable ```proxy_http``` module
+
+```
+sudo a2enmod proxy_http
+ ```
+
+- change or add ports at ```/etc/apache2/ports.conf```
+
+- check ports LISTENING ...
+
+```
+sudo lsof -n -P -n | grep LISTEN
+ ```
 
 ###### [How to Use Apache as a Reverse-Proxy with mod_proxy on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension-ubuntu-20-04)
 
@@ -74,12 +90,12 @@ There 2 sites:
 **Configuration**
 Steps to configure Apache
 
-1. Create a new file under ```/etc/apache2/sites-available/```, for example the name ```reverse-proxy```
+1. Create a new file under ```/etc/apache2/sites-available/```, for example the name ```reverse-proxy.conf```
 ```
-sudo touch /etc/apache2/sites-available/reverse-proxy
+sudo touch /etc/apache2/sites-available/reverse-proxy.conf
 ```
 
-2. Edit the file ```reverse-proxy``` as below
+2. Edit the file ```reverse-proxy.conf``` as below
 
 ```
 <VirtualHost *:80>
@@ -101,7 +117,7 @@ sudo touch /etc/apache2/sites-available/reverse-proxy
 
 ```
 sudo ln -s /etc/apache2/sites-available/reverse-proxy.conf /etc/apache2/sites-enabled/reverse-proxy.conf
-```
+ ```
 
 4. restart the apache2 service
 
@@ -138,6 +154,22 @@ Adjust the file ```reverse-proxy``` as below
 ```
 
 - _Proxy_ block is used to define multiple servers. The block is named ```balancer://mycluster``` (or any name you want) and consists of one or more ```BalancerMember```s, which specify the underlying backend server addresses.
+
+#### Error ... Invalid command 'ProxyPreserveHost' ...
+
+- Message Error: ```Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration```
+
+- Solution: This simply means that the proxy_http module is not enabled in apache2. Use the below command to enable proxy_http module
+
+```
+sudo a2enmod proxy_http
+ ```
+
+Restart apache2:
+
+```
+ sudo systemctl restart apache2.service
+ ```
 
 #### More info
 
