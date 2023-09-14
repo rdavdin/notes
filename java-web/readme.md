@@ -2,7 +2,7 @@
 
 These notes are mainly from the course [Java Web Developer Nanodegree](https://www.udacity.com/course/java-developer-nanodegree--nd035) on the **Udacity** platform and a minor part from articles I read while learning the course.
 
-1. [Spring in Visual Studio Code](./Spring-in-VSCode.md)
+1. [Essential extensions in Visual Studio Code](./Spring-in-VSCode.md)
 2. [Java EE Overview](./JavaEE8.md)
 
 #### Course 1: Spring Boot Basics
