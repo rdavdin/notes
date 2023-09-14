@@ -21,7 +21,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
 
 - **Spring Security** is a part of the Spring Framework and provides authentication, authorization and other security features for Spring-based applications.
 
-![](/imgs/java_web/spring-security-01.png)
+![](../../imgs/java_web/spring-security-01.png)
 
 ##### Security configurations
 

@@ -1,6 +1,6 @@
 ## Become a Java Web Developer 
 
-Notes are mainly from the course [Java Web Developer Nanodegree](https://www.udacity.com/course/java-developer-nanodegree--nd035) on the **Udacity** platform and a minor part from articles I read while learning the course.
+These notes are mainly from the course [Java Web Developer Nanodegree](https://www.udacity.com/course/java-developer-nanodegree--nd035) on the **Udacity** platform and a minor part from articles I read while learning the course.
 
 1. [Spring in Visual Studio Code](./Spring-in-VSCode.md)
 2. [Java EE Overview](./JavaEE8.md)
@@ -24,6 +24,7 @@ Notes are mainly from the course [Java Web Developer Nanodegree](https://www.uda
 6. [Consume REST](./web-services-and-apis/consuming-soap-rest.md)
 7. [Documentation](./web-services-and-apis/documentation.md)
 8. [Unit & Integration Tests](./web-services-and-apis/unit-integration-tests.md)
+9. **Project:** [Vehicles API](https://github.com/rdavdin/vehicles_api)
 
 #### Course 3: Data Stores and Persistance
 
@@ -39,6 +40,7 @@ Notes are mainly from the course [Java Web Developer Nanodegree](https://www.uda
 1. [Authentication and Authorization](./security-and-devops/authentication-authorization.md)
 2. [Testing and Logging](./security-and-devops/testing-and-logging.md)
 3. [CI/CD](./security-and-devops/ci-cd.md)
+4. **Project:** [eCommerce](https://github.com/rdavdin/mini-ecommerce)
 
 ### Further Reading
 1. [Inversion of Control Containers and Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html)

@@ -265,7 +265,8 @@ JPA has features for DDL generation, and these can be set up to run on startup a
     - Be careful when switching from in-memory to a ‘real’ database that you do not make assumptions about the existence of the tables and data in the new platform. You **either** have to **set ```ddl-auto```** explicitly **or** use one of **the other mechanisms** to initialize the database.
     - In addition, ```import.sql``` file is executed on startup if Hibernate creates the schema (ddl) from scratch (that is ```ddl-auto``` is set ```create``` or ```create-drop```). This is a **Hibernate feature** (and has nothing to do with Spring)
 
-    ![](/imgs/java_web/initialize-db-properties.png)
+    ![](../../imgs/java_web/initialize-db-properties.png)
+
 
     - **```create```**: Drop all tables for defined Entities, then create them.
     - **```create-drop```**: Create tables, drop them when application stops.
@@ -336,7 +337,7 @@ java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you 
 
 **Reason:** ApplicationTest has a different package structure from Application.
 
-![](/imgs/java_web/test-errors-1.png)
+![](../../imgs/java_web/test-errors-1.png)
 
 **Solution:** 
 

@@ -4,7 +4,7 @@
 
 **Multitiered Aplications**
 
-![](/imgs/java_web/javaeett_dt_001.png) 
+![](../imgs/java_web/javaeett_dt_001.png) 
 *Source: [The Java EE Tutorial](https://javaee.github.io/tutorial/overview004.html)*
 
   1. Client Tier
