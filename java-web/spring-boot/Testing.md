@@ -4,7 +4,7 @@
 
 The **red then green** philosophy!!! **Write tests before the code to be tested!!!**
 
-![](/imgs/java_web/l5-07-big-picture.png)
+![](../../imgs/java_web/l5-07-big-picture.png)
 _The Test-Driven Development_
 
 - First, there is an idea for **a new feature**
@@ -35,7 +35,7 @@ If all the tests pass, it means that all of the user stories are successfully im
 
 [Annotations list](https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations)
 
-![](/imgs/java_web/junit-lifecycle.png)
+![](../../imgs/java_web/junit-lifecycle.png)
 _The JUnit Lifecycle_
 
 - _@BeforeALL_ and _@AfterAll_ are used to manage **static resources** to be shared by all tests, like lookup tables, drivers, and web connections.
@@ -53,7 +53,7 @@ _The JUnit Lifecycle_
 
 **Selenium** is a cross-platform tool for browser automation and scripting, and we're going to use it to write tests that **simulate a user's actions in a browser**.
 
-![](/imgs/java_web/l5-53-selenium-webdriver.png)
+![](../../imgs/java_web/l5-53-selenium-webdriver.png)
 _The Architecture of Selenium_
 
 
@@ -86,7 +86,7 @@ _The Architecture of Selenium_
 
 **An Example**
 
-![](/imgs/java_web/selenium-page-object-1.png)
+![](../../imgs/java_web/selenium-page-object-1.png)
 _The Functionality of Counter Page_
 
 **CounterPage has three main sections**

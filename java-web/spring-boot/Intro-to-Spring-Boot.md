@@ -22,7 +22,7 @@ In **plain Java**, you have to do a lot of tasks to handle fully requirements of
 - These beans can take advantage of the Spring's vast array of libraries to perform tasks like database access or HTML template rendering.
 - Spring allows us to create networks of **dependencies between beans**, which means we can write **single-purpose components** that rely on each other to perform complex tasks.
 
-![Web Application Architecture](/imgs/java_web/l0-10-intro-to-web-development.jpg "The Architecture of a Web Application")
+![Web Application Architecture](../../imgs/java_web/l0-10-intro-to-web-development.jpg "The Architecture of a Web Application")
 
 #### Business Stakeholders
 
@@ -50,6 +50,6 @@ Spring Boot brings all the functionality of Spring and some additional advantage
   2. It provides necessary dependencies to **ease the build configuration**
 
 #### Covered Topics in the Course
-![Course Outline](/imgs/java_web/l0-30-course-outline.jpg "Course Outine")
+![Course Outline](../../imgs/java_web/l0-30-course-outline.jpg "Course Outine")
 
-![Overview of Curriculum Goals](/imgs/java_web/l0-42-recap.jpg "Overview of Curriculum Goals")
+![Overview of Curriculum Goals](../../imgs/java_web/l0-42-recap.jpg "Overview of Curriculum Goals")

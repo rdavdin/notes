@@ -45,7 +45,7 @@ Features of MSA:
   -  ```Config Client``` for ```spring-cloud-starter-config```
   -  ```Eureka Server``` for ```spring-cloud-starter-netflix-eureka-server```
 
-![](/imgs/java_web/eureka-server-dependencies.png)
+![](../../imgs/java_web/eureka-server-dependencies.png)
 _Only 2 these dependencies for creating a Eureka server_
 
 **Note:** Should use tool [Initializr](https://start.spring.io/) to generate ```pom.xml``` file properly
@@ -80,7 +80,7 @@ spring.cloud.config.import-check.enabled=false
   - ```Config Client``` for ```spring-cloud-starter-config```
   - ```Eureka Discovery Client``` for ```spring-cloud-starter-netflix-eureka-client```
 
-![](/imgs/java_web/eureka-client-dependencies.png)
+![](../../imgs/java_web/eureka-client-dependencies.png)
 _Add more additional dependencies for Eureka client_
 
 **Note:** Should use tool [Initializr](https://start.spring.io/) to generate ```pom.xml``` file properly
@@ -117,7 +117,7 @@ spring.cloud.config.import-check.enabled=false
 
 **Check Eureka server's dashboard at [http://localhost:8761/](http://localhost:8761/)**
 
-![](/imgs/java_web/eureka-dashboard.png)
+![](../../imgs/java_web/eureka-dashboard.png)
 _2 services Boogle-maps and Pricing-service are registered successfully_
 
 **Further Reading [Introduction to Spring Cloud Netflix – Eureka](https://www.baeldung.com/spring-cloud-netflix-eureka)**

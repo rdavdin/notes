@@ -1,7 +1,7 @@
 ### Spring MVC and Thymeleaf
 
 #### Traditional MVC Structure
-![](/imgs/java_web/traditional-mvc.png)
+![](../../imgs/java_web/traditional-mvc.png)
 _The MVC Abstraction Structure_
 
 MVC stands for Model-View-Controller, which is a common software pattern for **user interface design**. Traditionally, it divides the roles of components in an app into **3 layers**:
@@ -13,7 +13,7 @@ MVC stands for Model-View-Controller, which is a common software pattern for **u
 [Read more: High-level Overview of Different MVC Variants](https://uniandes-se4ma.gitlab.io/books/chapter8/mvc-mvvm-mv-mvwhat.html)
 
 #### Spring MVC 
-![](/imgs/java_web/spring-mvc.png)
+![](../../imgs/java_web/spring-mvc.png)
 _Spring MVC Architecture_
 
 Spring MVC is built around the browser as a platform, and it organizes 3 above roles as below:
@@ -23,10 +23,10 @@ Spring MVC is built around the browser as a platform, and it organizes 3 above r
 - ```Model``` objects are the models - they are as simple data-transfer objects that can store various **bits of data** in the _key-value_ form. Each controller can take an **optional ```Model``` argument**.
 
 **Basic Flow in Spring MVC**
-![](/imgs/java_web/mvc-eg-1.png)
+![](../../imgs/java_web/mvc-eg-1.png)
 _Indicate which template chosen to render_
 
-![](/imgs/java_web/mvc-eg-2.png)
+![](../../imgs/java_web/mvc-eg-2.png)
 _How to use Model object as transfer-data object in Spring MVC_
 
 #### Thymeleaf
@@ -71,7 +71,7 @@ public String addMessage(@ModelAttribute("newMessage") MessageForm messageForm, 
 
 #### MultiPartFile Upload
 
-![](/imgs/java_web/upload-file-multipart.png)
+![](../../imgs/java_web/upload-file-multipart.png)
 _File Upload_
 
 [Official Spring MVC file upload tutorial](https://spring.io/guides/gs/uploading-files/)

@@ -35,7 +35,7 @@
 - A salt is random data that is used as an additional input to the hash function so that the final hash becomes more secure.
 - Salting is an approach to generate two **different hash values** for two different users providing **the same input**.
 
-![](/imgs/java_web/salting.png)
+![](../../imgs/java_web/salting.png)
 
 **Points to Consider**
 
@@ -50,7 +50,7 @@
 
 ### Authorization
 
-![](/imgs/java_web/auth-authoz.png)
+![](../../imgs/java_web/auth-authoz.png)
 _Basic authentication and authorization steps_
 
 #### JSON Web Token - JWT 
@@ -114,7 +114,7 @@ HMACSHA256(
 
 #### How does it work?
 
-![](/imgs/java_web/using-jwt.png)
+![](../../imgs/java_web/using-jwt.png)
 _How to generate a JWT and use it_
 
 **Further reading:**

@@ -4,7 +4,7 @@
 
 ### Testing
 
-![](/imgs/java_web/testing-1.png)
+![](../../imgs/java_web/testing-1.png)
 _Types of Testing_
 
 - **UAT** : User acceptance testing - to make sure that the requirements are met with the solution provided.

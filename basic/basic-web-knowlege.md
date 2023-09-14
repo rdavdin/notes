@@ -35,7 +35,7 @@ BOM allows Javascript to 'talk to' the browser. Refer to [this](https://www.java
 - **Note:** BOM is not a part of official Javascript specification. Each browser can implement BOM differently. So, code that replies on BOM may not be portable across different browsers. 
 - The default object of browsers is **_window_**. 
 - There are properties/other objects as a part of window, there are underneath the window object like _document_, _screen_, _history_, _navigator_, _location_, _innerHeight_, _innerWidth_.
-![parts of window object](/imgs/basic/bom.jpg)
+![parts of window object](../imgs/basic/bom.jpg)
 #### The **_window_** object
 - It represents the browser's window.
 - **All global** Javascript _objects_, _functions_, _variables_ **automatically** become members of the _window_ object.

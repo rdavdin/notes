@@ -20,7 +20,7 @@ Spring is an implementation of Inversion of Control (IoC), in particular Depende
 
 When we define a component, we also define its dependencies, other components that the component needs to perform its function.
 Then, when we run our app, Spring ensures that all components are created in a compatible order, and **injects dependencies** in the components that declared them.
-![](/imgs/java_web/l2-10-big-picture.png)
+![](../../imgs/java_web/l2-10-big-picture.png)
 *The Spring Transformation*
 
 _Dependencies_ can be everything from _string_, _numbers_ to _database drivers_ or _request handlers_.
@@ -60,14 +60,14 @@ This is a **closed system**. It means components instantiated **outside** of Spr
 - **@EnableAutoConfiguration**: at **class** level. It tells Spring to try to automatically match beans to dependencies based **primarily on type**.
 - **@ComponentScan**: tells Spring to search in your code base for classes annotated with **_@Component_**. These classes will automatically be instantiated as Spring beans. Keep in mind that _@ComponentScan_ only enables Spring's component scanning in the same package or sub-packages of the _@SpringBootApplication_**'s location**.
 
-![](/imgs/java_web/screen-shot-2020-06-04-at-12.08.59-pm.png)
+![](../../imgs/java_web/screen-shot-2020-06-04-at-12.08.59-pm.png)
 *An example how Spring processes an IoC Configuration*
 
 #### Key Terms
 ##### Onion Architecture
 Onion Architecture: An **architectural pattern** in which an application is **separated into** nested layers. The separation of layers emphasizes clean **separation of concerns**.
 
-![](/imgs/java_web/l2-29-components-and-services.png)
+![](../../imgs/java_web/l2-29-components-and-services.png)
 *The basic structure of Onion Architecture*
 
 - External requests must first pass through a layer of **controllers** or request handlers whose only purpose is to handle these external requests. 

@@ -18,13 +18,13 @@ Read the following articles:
 
 **Relationship between _Application_, _ORM_, _JDBC API_, _JDBC Driver_, _Database_**
 
-![](/imgs/java_web/data-flow-app-2-db.png)
+![](../../imgs/java_web/data-flow-app-2-db.png)
 
 #### ORM - Object-Relational Mapping
 - _Mapping_: Drawing a relationship between a field in a Java class and a column in a SQL table
 - _ORM_: A general term describing a set of technology that can be used to automatically convert data between database representation and application representation
 
-![](/imgs/java_web/l4-18-orm-is-the-norm-summary.png)
+![](../../imgs/java_web/l4-18-orm-is-the-norm-summary.png)
 _ORM Process Visualization_
 
 #### MyBatis
@@ -76,7 +76,7 @@ public interface UserMapper {
 - _@Options_: provides access to **configuration options** for JDBC statements
 
 **Where is MyBatis in the Onion Architecture?**
-![](/imgs/java_web/l4-29-mybatis-mappers.png)
+![](../../imgs/java_web/l4-29-mybatis-mappers.png)
 _MyBatis Mappers lie at the Center of Our Onion Architecture_
 
 **Noted main points from the article: [Java & Databases: An Overview of Libraries and APIs](/articles/Java-and-Database-Overview.md)**

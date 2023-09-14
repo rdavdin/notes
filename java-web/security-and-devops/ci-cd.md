@@ -2,7 +2,7 @@
 
 You should be proficient in tools such as: **Git, AWS, Docker, Jenkins**
 
-![](/imgs/java_web/cicd-pineline.png)
+![](../../imgs/java_web/cicd-pineline.png)
 
 ### Docker
 
@@ -170,9 +170,9 @@ public class DemoApplication extends SpringBootServletInitializer {
 
 On IDE Intellij as following:
 
-![](/imgs/java_web/build_war_1.png)
+![](../../imgs/java_web/build_war_1.png)
 
-![](/imgs/java_web/build_war_2.png)
+![](../../imgs/java_web/build_war_2.png)
 
 - *Step 4:* copy the war file to folder ```webapps``` of Tomcat. For example: 
 
@@ -198,7 +198,7 @@ scp -i .ssh/rdav-aws-server.pem demo.war ec2-user@52.77.233.139:/usr/local/tomca
 
 - Then add environment variables. Such as, add JAVA_HOME as below:
 
-![](/imgs/java_web/jenkins-global-env-variables.png)
+![](../../imgs/java_web/jenkins-global-env-variables.png)
 
 2. So far, Jenkins does not support Tomcat 10 or later, which is based on Servlet API 5.0 (Jakarta EE 9) or later with ```jakarta.servlet``` imports.. [Read more](https://www.jenkins.io/doc/administration/requirements/servlet-containers/#support-levels). 
 
@@ -219,10 +219,10 @@ scp -i .ssh/rdav-aws-server.pem demo.war ec2-user@52.77.233.139:/usr/local/tomca
 </dependency>
  ```
 
-![](/imgs/java_web/env-file.png)
+![](../../imgs/java_web/env-file.png)
 _The place of .env file_
 
-![](/imgs/java_web/env-usage.png)
+![](../../imgs/java_web/env-usage.png)
 _The way of using dotenv package_
 
 **Note:** It's important to bear in mind that if **sensitive data** is stored in .env, that it must **not be stored under version control**.

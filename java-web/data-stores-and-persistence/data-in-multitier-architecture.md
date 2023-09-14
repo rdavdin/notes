@@ -33,7 +33,7 @@ The data inside an Entity
 
 **Define an Entity type**
 
-![](/imgs/java_web/screen-shot-2020-03-19-at-2.22.48-pm.png)
+![](../../imgs/java_web/screen-shot-2020-03-19-at-2.22.48-pm.png)
 _@Entity, @Table, @Column annotations_
 
 **_Remember_**: Entity classes must provide a public or protected 
@@ -48,7 +48,7 @@ _@Entity, @Table, @Column annotations_
 - [Full List of Hibernate standard Basic Types](https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#basic)
 - Hibernate selects default BasicTypes for you, but you can override by specifying the **@Type** annotation, as below.
 
-![](/imgs/java_web/screen-shot-2020-03-19-at-2.24.14-pm.png)
+![](../../imgs/java_web/screen-shot-2020-03-19-at-2.24.14-pm.png)
 
 #### 3. Identifiers
 
@@ -492,7 +492,7 @@ public class CreepyDepartmentStoreMannequin extends Humanoid {
 - Allows the fastest polymorphic queries because no tables need to be joined to access all subclasses.
 - **Cannot support Not Null column** constraints because columns must be able to contain null for sibling classes.
 
-![](/imgs/java_web/screen-shot-2020-03-19-at-2.31.14-pm.png)
+![](../../imgs/java_web/screen-shot-2020-03-19-at-2.31.14-pm.png)
 *Single Table Inheritance*
 
 ##### Other Inheritance Strategies
@@ -518,13 +518,13 @@ public class Humanoid {
 }
  ```
 
-![](/imgs/java_web/screen-shot-2020-03-19-at-2.31.56-pm.png)
+![](../../imgs/java_web/screen-shot-2020-03-19-at-2.31.56-pm.png)
 
 ##### @MappedSuperclass Annotation
 
 - This option is similar to the type ```InheritanceType.TABLE_PER_CLASS``` but there is **no parent** table created.
 
-![](/imgs/java_web/mappdsupperclass.png)
+![](../../imgs/java_web/mappdsupperclass.png)
 _No parent class created_
 
 
@@ -546,7 +546,7 @@ _No parent class created_
 - The entities act as a bridge between the needs for application layer and the structure of the database. As such, the entities belong in the **data layer** of our application, which coordinates the communication between the application layer and the database.
 - The data layer will contain all the entity definitions for a program, as well as the classes that use those entities to talk to the database.
 
-![](/imgs/java_web/screen-shot-2020-04-22-at-2.33.38-pm.png)
+![](../../imgs/java_web/screen-shot-2020-04-22-at-2.33.38-pm.png)
 
 #### Data Conversion between Front-end and Controller
 
@@ -561,7 +561,7 @@ _No parent class created_
 - For each request our controller supports, we create a new object representing the structure of any input or output data needed by the request. These objects **should not** be referenced outsider our controller classes because they define a data format specific to the endpoints provided by that controller.
 - Any exchanges with the service layer will involve **transforming the data between the entity and the DTO**. This translation should happen inside the controller, just like the translation between entity and database happens inside the data layer. The service layer **should not** be required to know what shape your DTOs take.
 
-![](/imgs/java_web/entity-2-dto-on-controller.png)
+![](../../imgs/java_web/entity-2-dto-on-controller.png)
 *Data Translation Entity to DTOs should happen inside controllers*
 
 **Purposes:**
@@ -569,7 +569,7 @@ _No parent class created_
 - The primary purpose of DTOs is to **encapsulate specific data** that needs to be exchanged, simplifying the interaction betwen the browser and the REST client.
 - Another purpose of DTOs is to reduce the total amount of data exchanged.
 
-![](/imgs/java_web/dtos-reduce-data.png)
+![](../../imgs/java_web/dtos-reduce-data.png)
 *OutfitDTO represents a smaller amount of data than Outfit entity*
 
 **DTO Summary**

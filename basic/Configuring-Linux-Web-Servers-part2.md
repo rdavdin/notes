@@ -247,8 +247,8 @@ Common Networking Ports:
 ### Intro to Firewalls
 - We should let our server listen on the ports required for our application to function correctly.
 - We can configure which ports we want our server to listen to by using an application called **firewall**.
-![Firewalls Illustration](/imgs/linux/firewall-illustration.png)
-![Firewalls Illustration](/imgs/linux/HardwareFirewall.gif)
+![Firewalls Illustration](../imgs/linux/firewall-illustration.png)
+![Firewalls Illustration](../imgs/linux/HardwareFirewall.gif)
 
 #### Intro to ```ufw```
 - Ubuntu comes with a firewall **pre-installed** called ```ufw```, but it's not active.

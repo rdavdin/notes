@@ -25,7 +25,7 @@ Which Java application server should you choose for your app?
 
 - The core difference is that application servers have **full** support for the **Java EE spec**, while web servers support a **small subset** of that functionality.
 
-![Web server vs application server](/imgs/java_web/javaee-spec-supp-2-1-768x381.webp) 
+![Web server vs application server](../../imgs/java_web/javaee-spec-supp-2-1-768x381.webp) 
 *Source: https://www.baeldung.com/java-servers*
 
 #### Java Servlets
@@ -39,10 +39,10 @@ The server interacts with each servlet through 3 standard methods:
 - ```init``` is where initialization of the servlet is handled, and the server will call this method directly after instantiating the servlet.
 - ```destroy``` is where servlet resource cleanup is handled, and is called directly before the server terminates the servlet instance.
 
-![The life cycle of a servlet](/imgs/java_web/screen-shot-2020-06-03-at-4.51.26-pm.png) 
+![The life cycle of a servlet](../../imgs/java_web/screen-shot-2020-06-03-at-4.51.26-pm.png) 
 *The Lifecycle of a Servlet in an Application Server*
 
-![](/imgs/java_web/javaeett_dt_013.png)
+![](../../imgs/java_web/javaeett_dt_013.png)
 
 _Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp001.html#GEYSJ)_
 
@@ -64,7 +64,7 @@ _Source [Java Web App Request Handling](https://javaee.github.io/tutorial/webapp
 - The Spring container is piggybacked on a servlet instance, meaning that the overall lifecycle of the Spring application components **is bounded** by the lifecycle of the servlet they're running on.
 - In addition, Spring can re-route requests from the Servlet layer to our application components according to whatever logic we dictate.
 
-![](/imgs/java_web/spring-place-in-app-server.png)
+![](../../imgs/java_web/spring-place-in-app-server.png)
 
 _Spring's place in an application server_
 
