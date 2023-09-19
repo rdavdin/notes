@@ -440,6 +440,18 @@ public class Outfit {
 - **OneToMany** and **ManyToOne**: List of Entities on one side, single Entity on the other.
 - **ManyToMany**: Lists of Entities on both sides.
 
+##### Notes: 
+
+1. **Bidirectional Association**: must have one **owning side only** (the child side), the other one being **referred** to as the *inverse* (or the *mappedBy*) side.
+   
+   - Whenever a bidirectional association is formed, the application developer must **make sure both sides are in-sync** at all times.
+
+2. In database perspective:
+
+- ```@ManyToOne```: add a new column as a foreign key
+- ```@OneToMany```: add a new link table
+- In the **Bidirectional Association** of ```@OneToMany``` as an owning side and ```@ManyToOne``` as a referring side (```@mappedBy```): add a new column as foreign key in the owning table.
+
 ##### Further Reading 
 
 - [Hibernate Documentation of Associations](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#associations)

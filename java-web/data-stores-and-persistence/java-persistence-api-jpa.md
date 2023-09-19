@@ -13,7 +13,8 @@ There are 4 states of an entity object:
 
 #### Entity Manager
 
-- EntityManager has the role of **creating and deleting persistent entities**, and they can also find entities in the database or **execute other queries**.
+- ```EntityManager``` has the role of **creating and deleting persistent entities**, and they can also find entities in the database or **execute other queries**.
+- Generally speaking, ```EntityManager``` is the main interface through which you interact with the persistence context. It provides methods for performing **CRUD** operations on entities, as well as managing the persistence context an transactions.
 
 **Changing Persistence States**
 
@@ -386,6 +387,19 @@ _The place of components between Java app with relational databases_
 ##### A good practice
 
 - Start one transaction for each **request that interacts with the database**.
-- Using ```@Transactional``` to do that at the **Service layer**.
+- Using ```@Transactional``` to do that at the **Service layer**. 
+
+**@Transactional:**
+
+- ```@Transactional``` tells Spring to manage the transaction for a method. It means that all operations in the method is **either successful or failed**
+
+```
+@Transactional
+public void saveData(Data data) {
+    // Perform database operations
+}
+ ```
+
+- In this example, the ```savDate()```  method is annotated with ```@Transactional```, indicating that it should be **executed within a transaction**. If an exception occurs during the execution of the method, the transaction will be **rolled back**, ensuring data consistency.
 
 [Hibernate documentation on Flushing](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#flushing)
