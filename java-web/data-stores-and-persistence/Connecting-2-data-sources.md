@@ -24,6 +24,16 @@
 </dependency>
  ```
 
+**Updated:**
+
+```
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <scope>runtime</scope>
+</dependency>
+ ```
+
 ### Ways to configure DataSources in Spring
 
 ##### Way 1: From ```application.properties``` file
@@ -300,7 +310,7 @@ spring.datasource.password=sa
 # Optional for the properties following with embedded databases
 spring.sql.init.mode=embedded
 spring.jpa.generate-ddl=true
-spring.jpa.hibernate.auto-dll=create-drop
+spring.jpa.hibernate.dll-auto=create-drop
 
 # The properties for generating sql commands to the console
 spring.jpa.show-sql=true
