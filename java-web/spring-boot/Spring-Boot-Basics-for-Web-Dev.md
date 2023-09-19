@@ -63,6 +63,12 @@ This is a **closed system**. It means components instantiated **outside** of Spr
 ![](../../imgs/java_web/screen-shot-2020-06-04-at-12.08.59-pm.png)
 *An example how Spring processes an IoC Configuration*
 
+#### Spring - Dependency injection in @Bean method parameters
+
+![](../imgs/java_web/../../../imgs/java_web/bean-params.png)
+_Source: [logicbig.com](https://www.logicbig.com/tutorials/spring-framework/spring-core/javaconfig-methods-inter-dependency.html)_
+
+
 #### Key Terms
 ##### Onion Architecture
 Onion Architecture: An **architectural pattern** in which an application is **separated into** nested layers. The separation of layers emphasizes clean **separation of concerns**.
