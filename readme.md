@@ -15,6 +15,7 @@ I have been taking these notes of computer subjects while working, learning and 
 
 1. [SQL in 24 Hours](https://docs.google.com/document/d/1IlxwsAVQSm3hUI7OtbXHhPY0Y0Abot94-N7g32kpJtc/edit?usp=sharing)
 2. [Database Systems Concepts & Design](https://docs.google.com/document/d/1ova5842pa6AbyCJpEIKeeTi9QXkImOGeoPY6J6ZsUCs/edit?usp=sharing) (on [Udacity](https://www.udacity.com/course/database-systems-concepts-design--ud150))
+3. [Optimize Database with Indexes](./basic/Index-SQL.md)
 
 ### Programming Languages
 1. Book: [Eloquent Javascript (3rd Edition)](https://docs.google.com/document/d/1ZU5A8xfihScfoau0FNzTwyubJY_BC38fkhAYDrjrf8o/edit?usp=sharing)
