@@ -8,7 +8,7 @@ I have been taking these notes of computer subjects while working, learning and 
 3. [HTTP and Web Servers](./basic/HTTP-and-Web-Servers.md) (on [Udacity](https://www.udacity.com/course/http-web-servers--ud303))
 4. Networking for Web Developers [Part 1](./basic/Networking-for-Web-Developer-Part1.md), [Part 2](./basic/Networking-for-Web-Developer-Part2.md), [Part 3](./basic/Networking-for-Web-Developer-Part3.md) (on [Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256))
 5. Configuring Linux Web Servers [Part 1](./basic/Configuring-Linux-Web-Servers-part1.md), [Part 2](./basic/Configuring-Linux-Web-Servers-part2.md), [Part 3](./basic/Configuring-Linux-Web-Servers-part3.md) (on [Udacity](https://www.udacity.com/course/configuring-linux-web-servers--ud299))
-6. [Jave Web Developer Nanodegree](./java-web/readme.md) (on [Udacity](https://www.udacity.com/course/java-developer-nanodegree--nd035))
+6. [Java Web Developer Nanodegree](./java-web/readme.md) (on [Udacity](https://www.udacity.com/course/java-developer-nanodegree--nd035))
 7. [Cors in Nodejs/Express](./basic/Cors-in-Express.md)
 
 ### Database
