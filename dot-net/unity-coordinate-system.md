@@ -63,6 +63,50 @@ Screen coordinate with the device resolution 1280x720
 - Start at (0,0) in the **lower left** and go to (1,1) in the upper right 
 - No matter what the resolution of device and orientation. For example (0.5, 0.5) in viewport coordinates will be the center of the screen no matter what resolution or orientation.
 
+# Camera and Camera View in Unity
+Imagine you are taking a photo with a real camera. Let’s break it down with some questions:
+
+**What is the Camera?**
+- Real Camera: A device that captures a specific moment of a part of the real world.
+- In Unity:
+    - Camera: A component that captures a specific view of the game world (3D world space).
+
+**What is the Camera's View?**
+- Real Camera: The part of the real world that is visible through the camera’s lens.
+- In Unity:
+    - Camera's View: The portion of the game world that is visible through the Unity camera. This is defined by the camera’s field of view (FOV) and its position and orientation in the game world.
+
+**What is the Photo?**
+- Real Camera: A container that displays the captured image.
+- In Unity:
+    - Screen: The 2D surface (like your monitor or mobile screen) where the game is displayed.
+    
+**What is the Content in the Photo Taken?**
+- Real Camera: The real-world scene at a specific moment, captured and displayed as a 2D image.
+- In Unity:
+    - Rendered Image: The part of the game world captured by the camera and projected onto the screen (2D). This includes all the visible objects, lighting, and effects from the game world at that moment.
+
+**Summary**
+- The camera in Unity functions like a real camera, capturing the game world from a specific point of view.
+- The camera’s view in Unity is similar to looking through a camera lens, seeing only a portion of the game world.
+- The screen acts like the photo, displaying the captured view of the game world in 2D.
+- So, in essence, the camera and camera view in Unity work similarly to a real camera and its view, capturing and displaying parts of the game world on your screen.
+
+### Main Camera View vs Screen Coordinate System
+
+- The screen coordinates **are mapped** to the camera's view.
+- The main camera projects 3D objects onto a 2D plane (**the screen**).
+- Use **ScreenToWorldPoint** and **WorldToScreenPoint** to convert the position between Screen coordinate system and World space.
+
+```
+Vector3 world2Screen = Camera.main.WorldToScreenPoint(transform.position);
+
+Vector3 pointOnScreen = new Vector3(240, 400, 0);
+Vector3 screen2World = Camera.main.ScreenToWorldPoint(pointOnScreen);
+```
+
+
+
 # Transform
 
 ### position vs localPosition
@@ -117,8 +161,25 @@ Circle2.transform.position = Square.transform.TransformPoint(new Vector3(0, 0.5,
 
 - Convert the direction from **world space** to **local space**
 
+### Transform.TransformVector()
+
+- Convert the vector  from **local space** to **world space**
+
+### Transform.InverseTransformVector()
+
+- Convert the vector from **world space** to **local space**
+
+### Camera.WorldToScreenPoint() and Camera.ScreenToWorldPoint()
+
+- Convert the point from world space to screen space and vice versa
+
+### Camera.ScreenToViewportPoint() and Camera.ViewportToScreenPoint()
+
+- Screen space and viewport space
+
+### Camera.WorldToViewportPoint() and Camera.ViewportToWorldPoint()
+
+- World space and viewport space
+
 ### Other Questions
-- Camera? Camera view?
 - Canvas?
-- Is there a relationship between World space with Camera view?
-- Main Camera vs other Cameras?
