@@ -137,7 +137,7 @@ Vector3 screen2World = Camera.main.ScreenToWorldPoint(pointOnScreen);
 Circle2.transform.localPosition = new Vector3(0, 0.5, 0)
  ```
 
-*Equivalant to*
+*Equivalent to*
 
 ```
 
